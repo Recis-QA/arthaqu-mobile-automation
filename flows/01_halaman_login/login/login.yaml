@@ -1,0 +1,48 @@
+appId: ${APP_ID}
+---
+
+- runFlow: ../../../subflows/start_aplikasi.yaml
+
+- assertVisible:
+    id: "btnLogin"
+
+- runFlow:
+    file: ../../../subflows/auth/do_login.yaml
+    env: 
+        INPUT_USERNAME: ${USERNAME}
+        INPUT_PASSWORD: ${PASSWORD}
+
+# - runFlow: 
+#     file: ../../support/pendukung_login/ubah_password.yaml
+#     when:
+#         visible: "Ubah password"
+
+- runFlow: 
+    file: ../../support/pendukung_login/ubah_pin.yaml
+    when: 
+        visible: ".*ubah PIN.*"
+
+- runFlow: 
+    file: ../../support/pendukung_login/product_tour.yaml
+    when: 
+        visible: "Selanjutnya"
+
+# Validasi 1: Pastikan sudah masuk ke Beranda
+- assertVisible: "Deposit anda"
+- assertVisible: "Beranda"
+
+# Copy saldo setelah login
+- tapOn:
+    id: "mata"
+- assertVisible:
+    id: "textValueBalance"
+- copyTextFrom:
+    id: "textValueBalance"
+# Simpan ke variabel custom bernama 'saldo_sebelum'
+- evalScript: ${output.saldo_sebelum = maestro.copiedText}
+
+# (Opsional) Print ke log terminal Maestro
+- evalScript: '${console.log("=== SALDO SEBELUM: " + output.saldo_sebelum + " ===")}'
+
+- takeScreenshot: Login/Login Berhasil - Beranda
+

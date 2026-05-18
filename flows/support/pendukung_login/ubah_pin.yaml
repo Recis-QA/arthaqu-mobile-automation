@@ -1,0 +1,10 @@
+appId: ${APP_ID}
+---
+
+- tapOn: "Ubah PIN"
+- runFlow:
+    file: ../../../subflows/keamanan/do_ubah_pin.yaml
+    env: 
+        INPUT_PIN: ${PIN}
+        INPUT_PIN_BARU: ${PIN_BARU}
+        INPUT_KONFIRMASI_PIN: ${KONFIRMASI_PIN}

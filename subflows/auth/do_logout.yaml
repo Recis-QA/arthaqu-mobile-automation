@@ -1,0 +1,15 @@
+appId: ${APP_ID}
+---
+
+- assertVisible: "Keluar"
+- tapOn: "Keluar"
+
+- takeScreenshot: 05_profile/keluar/Keluar - 3
+
+- assertVisible: "Apakah anda yakin ingin keluar dari akun ini?"
+- tapOn: "Ya"
+
+- assertVisible: "Username"
+- assertVisible: "Masuk"
+
+- takeScreenshot: 05_profile/keluar/Keluar - 4

@@ -1,0 +1,31 @@
+appId: ${APP_ID}
+---
+
+# 1. SIAPKAN VARIABEL AWAL (Mulai dari angka 1)
+- evalScript: ${output.counter = 1}
+
+# 1. Gunakan repeat dengan kondisi 'while'
+# Perintah ini akan terus berjalan SELAMA tombol "Lanjutkan" terlihat di layar.
+- repeat:
+    while:
+      visible: "Lanjutkan" # Maestro akan cek apakah teks ini muncul
+    commands:
+      - takeScreenshot: ${"landing_page/LandingPage - " + output.counter + ".png"}
+      - tapOn: "Lanjutkan"
+      - waitForAnimationToEnd
+      
+      # TINGKATKAN ANGKA COUNTER (+1) UNTUK HALAMAN BERIKUTNYA
+      - evalScript: ${output.counter++}
+
+# 2. Setelah tombol "Lanjutkan" hilang (karena sudah di halaman terakhir)
+# kliki checkbox Selalu Tampilkan (un-check).
+# - tapOn:
+#     text: "Selalu Tampilkan"
+#     optional: true # Gunakan optional agar tidak error jika tombol tidak ditemukan
+
+# 3. Setelah klik checkbox Selalu Tampilkan,
+# kita klik tombol "Mulai Sekarang".
+- takeScreenshot: landing_page/LandingPage - Terakhir
+- tapOn:
+    text: "Mulai Sekarang"
+    optional: true # Gunakan optional agar tidak error jika tombol tidak ditemukan

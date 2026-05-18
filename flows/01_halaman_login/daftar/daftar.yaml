@@ -1,0 +1,60 @@
+appId: ${APP_ID}
+---
+
+- runFlow: ../../../subflows/start_aplikasi.yaml
+
+- assertVisible:
+    id: "btnRegister"
+
+- takeScreenshot: Daftar/1.Halaman Login
+
+- tapOn:
+    id: "btnRegister"
+- assertVisible: "Daftar"
+- takeScreenshot: Daftar/2.Form Daftar
+
+- runFlow:
+    file: ../../../subflows/daftar/isi_form_daftar.yaml
+    env: 
+        INPUT_NO_HP: ${DAFTAR_NO_HP}
+        INPUT_NAMA: ${DAFTAR_NAMA}
+        INPUT_EMAIL: ${DAFTAR_EMAIL}
+        INPUT_ALAMAT: ${DAFTAR_ALAMAT}
+- takeScreenshot: Daftar/2.Form Daftar - Diisi
+- tapOn: "Lanjutkan"
+
+- assertVisible: "Referral"
+- takeScreenshot: Daftar/3.Form Referral
+- runFlow:
+    file: ../../../subflows/daftar/isi_form_referral.yaml
+    env: 
+        INPUT_NO_HP_REFERAL: ${DAFTAR_NO_HP_REFERRAL}
+- takeScreenshot: Daftar/3.Form Referral - Diisi
+- tapOn: "Lanjutkan"
+
+- assertVisible: "Syarat dan Ketentuan"
+- takeScreenshot: Daftar/4.Syarat dan Ketentuan
+- runFlow:
+    file: ../../../subflows/daftar/syarat_dan_ketentuan.yaml
+- takeScreenshot: Daftar/4.Form Referral - dicentang
+- tapOn: "Berikutnya"
+
+- assertVisible: "Kebijakan Privasi"
+- takeScreenshot: Daftar/5.Kebijakan Privasi
+- runFlow:
+    file: ../../../subflows/daftar/kebijakan_privasi.yaml
+- takeScreenshot: Daftar/5.Kebijakan Privasi - dicentang
+- tapOn: "Berikutnya"
+
+- assertVisible: "Customer Consent"
+- takeScreenshot: Daftar/6.Customer Consent
+- runFlow:
+    file: ../../../subflows/daftar/customer_consent.yaml
+- takeScreenshot: Daftar/6.Customer Consent - dicentang
+- tapOn: "Daftar"
+
+- assertVisible: ".*verifikasi OTP.*"
+- takeScreenshot: Daftar/7.Verifikasi OTP - 1
+- runFlow:
+    file: ../../../subflows/daftar/verifikasi_otp.yaml
+- takeScreenshot: Daftar/7.Verifikasi OTP - 2

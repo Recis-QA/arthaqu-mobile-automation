@@ -1,0 +1,27 @@
+appId: ${APP_ID}
+---
+
+- evalScript: ${output.counter = 1}
+
+# Looping akan terus berjalan SELAMA salah satu teks di bawah ini terlihat di layar
+- repeat:
+    while:
+      visible: "While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK"
+    commands:
+      - takeScreenshot: ${"landing_pageapp_permissions/AppPermission - " + output.counter + ".png"}
+      
+      # Di dalam loop, Maestro akan mencoba mengklik apapun yang tersedia saat itu.
+      # Karena pakai 'optional: true', Maestro tidak akan error jika teksnya tidak ada.
+      - tapOn:
+          text: "While using the app|Saat aplikasi digunakan"
+          optional: true
+          
+      - tapOn:
+          text: "Allow|Izinkan"
+          optional: true
+          
+      - tapOn:
+          text: "OK|Okey|Mengerti"
+          optional: true
+
+      - evalScript: ${output.counter++}

@@ -1,0 +1,37 @@
+appId: ${APP_ID}
+---
+
+# 1. CEK KONDISI UNTUK TOMBOL WA
+- runFlow:
+    commands: 
+      - tapOn: "WA"
+    when:
+      true: ${DAFTAR_TIPE_OTP == "WA"}
+
+# 2. CEK KONDISI UNTUK TOMBOL SMS
+- runFlow:
+    commands: 
+      - tapOn: "SMS"
+    when:
+      true: ${DAFTAR_TIPE_OTP == "SMS"}
+
+- waitForAnimationToEnd
+- assertVisible: "Verifikasi Pendaftaran"
+- takeScreenshot: Daftar/7.Verifikasi OTP - 2
+
+# Case Input PIN menunggu dari user input
+- evalScript: ${output.panjang_otp = 0}
+
+# 1. Lakukan perulangan pantauan OTP
+- repeat:
+    while:
+      true: ${output.panjang_otp < 6}
+    commands:
+      - copyTextFrom:
+          id: "etPin"
+      - evalScript: ${output.panjang_otp = maestro.copiedText.length}
+      - waitForAnimationToEnd
+
+# 2. Langkah Akhir Klik Verifikasi
+- takeScreenshot: Daftar/7.Verifikasi OTP - 3
+- tapOn: "Verifikasi"

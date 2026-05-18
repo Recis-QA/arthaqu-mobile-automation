@@ -1,0 +1,25 @@
+appId: ${APP_ID}
+---
+
+- assertVisible: "Ubah PIN"
+
+# 1. Tap area kotak PIN agar kursor aktif dan keyboard muncul [PIN Saat ini]
+- assertVisible: "Masukan PIN anda"
+- tapOn:
+    id: "etPin0"
+- inputText: ${INPUT_PIN}
+
+# 2. Tap area kotak PIN agar kursor aktif dan keyboard muncul [PIN Baru]
+- assertVisible: "Buat PIN Baru"
+- tapOn:
+    id: "etPin"
+- inputText: ${INPUT_PIN_BARU}
+
+# 3. Tap area kotak PIN agar kursor aktif dan keyboard muncul [Konfirmasi PIN]
+- assertVisible: "Konfirmasi PIN Baru"
+- tapOn:
+    id: "etPin1"
+- inputText: ${INPUT_KONFIRMASI_PIN}
+
+- assertVisible: "PIN berhasil diubah"
+- tapOn: "TUTUP"

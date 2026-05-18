@@ -1,0 +1,12 @@
+# Konfigurasi Aplikasi
+APP_ID: "io.arthaqu"
+IS_PROD: "true"
+
+# Waktu Tunggu (Production biasanya lebih stabil dan cepat, atau butuh toleransi animasi asli)
+GLOBAL_TIMEOUT: "12000"
+
+# Akun Testing (JANGAN hardcode PIN/Password asli di sini jika dishare ke tim)
+# Gunakan teknik Secret dari CLI atau kosongkan dan isi via Maestro Desktop
+USERNAME: ""
+PASSWORD: ""
+PIN: "" 

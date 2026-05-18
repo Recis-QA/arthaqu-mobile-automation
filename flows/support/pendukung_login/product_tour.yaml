@@ -1,0 +1,11 @@
+appId: ${APP_ID}
+---
+
+- repeat:
+    while:
+      visible: "Selanjutnya"
+    commands:
+      - tapOn:
+          text: "Selanjutnya"
+          optional: true
+      - waitForAnimationToEnd

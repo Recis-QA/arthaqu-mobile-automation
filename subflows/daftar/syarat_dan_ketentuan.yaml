@@ -1,0 +1,26 @@
+appId: ${APP_ID}
+---
+
+# 1. SIAPKAN VARIABEL AWAL (Mulai dari angka 1)
+- evalScript: ${output.counter = 1}
+
+# --- LOGIKA FORCED SWIPE BERULANG (ANTI-SURRENDER) ---
+- repeat:
+    while:
+      notVisible:
+        id: "checkboxRegister" # Terus ulangi SWIPE selama checkbox BELUM terlihat di layar
+    commands:
+      - takeScreenshot: ${"daftar/4.s&k - " + output.counter + ".png"}
+      - swipe:
+          start: "50%, 80%"  # Mulai dari layar bagian bawah (80%)
+          end: "50%, 20%"    # Tarik ke layar bagian atas (20%)
+          duration: 300      # Kecepatan tarikan (300ms, pas untuk scroll panjang)
+      - waitForAnimationToEnd # Tunggu layar berhenti bergerak sebelum cek ulang
+      - evalScript: ${output.counter++}
+
+# --- SETELAH KELUAR DARI REPEAT (ARTINYA SUDAH KETEMU) ---
+- assertVisible:
+    id: "checkboxRegister"
+- takeScreenshot: ${"daftar/4.s&k - " + output.counter + ".png"}
+
+- tapOn: ".*membaca dan menyetujui.*"

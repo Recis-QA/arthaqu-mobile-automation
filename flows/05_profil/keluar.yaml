@@ -1,0 +1,31 @@
+appId: ${APP_ID}
+
+---
+
+# Memastikan kembali ke halaman utama hingga menu profile ditemukan
+- repeat:
+    while:
+      notVisible:
+        id: "navProfile"
+    commands:
+      - back
+
+# Memastikan menu profile tampil
+- assertVisible:
+    id: "navProfile"
+
+# Membuka halaman profile
+- tapOn:
+    id: "navProfile"
+
+- takeScreenshot: 05_profile/keluar/Keluar - 1
+
+# Scroll hingga tombol logout terlihat
+- scrollUntilVisible:
+    element:
+      id: "btnLogout"
+
+- takeScreenshot: 05_profile/keluar/Keluar - 2
+
+# Menjalankan flow logout
+- runFlow: ../../subflows/auth/do_logout.yaml

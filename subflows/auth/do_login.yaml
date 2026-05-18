@@ -1,0 +1,26 @@
+appId: ${APP_ID}
+---
+
+- assertVisible:
+    id: "btnLogin"
+
+- tapOn:
+    id: "etUsername"
+- eraseText: 20
+
+- takeScreenshot: login\HalamanLogin
+
+- inputText: ${INPUT_USERNAME} # Berubah menjadi parameter dinamis
+- hideKeyboard
+
+- tapOn:
+    id: "etPassword"
+- eraseText: 50
+- inputText: ${INPUT_PASSWORD} # Berubah menjadi parameter dinamis
+- hideKeyboard
+- tapOn: "Show password"
+
+- takeScreenshot: login\HalamanLogin - Input Username Password
+
+- tapOn:
+    id: "btnLogin"

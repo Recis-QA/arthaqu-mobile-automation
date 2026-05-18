@@ -1,0 +1,6 @@
+appId: ${APP_ID}
+---
+
+- tapOn:
+    id: "etReffPhone"
+- inputText: ${INPUT_NO_HP_REFERRAL

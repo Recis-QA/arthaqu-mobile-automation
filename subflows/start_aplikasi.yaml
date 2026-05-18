@@ -1,0 +1,6 @@
+appId: ${APP_ID}
+---
+
+- launchApp
+- runFlow: ../flows/support/pendukung_start_aplikasi/landing_page.yaml
+- runFlow: ../flows/support/pendukung_start_aplikasi/app_permissions.yaml

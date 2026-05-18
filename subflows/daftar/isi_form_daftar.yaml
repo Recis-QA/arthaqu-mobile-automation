@@ -1,0 +1,18 @@
+appId: ${APP_ID}
+---
+
+- tapOn:
+    id: "etPhone"
+- inputText: ${INPUT_NO_HP}
+
+- tapOn:
+    id: "etName"
+- inputText: ${INPUT_NAMA}
+
+- tapOn:
+    id: "etEmail"
+- inputText: ${INPUT_EMAIL}
+
+- tapOn:
+    id: "etAddress"
+- inputText: ${INPUT_ALAMAT}
