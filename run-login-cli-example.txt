@@ -1,0 +1,72 @@
+Contoh Command Running Login via Maestro CLI
+===========================================
+
+Jalankan command dari root folder project:
+
+d:\1_Kerjaan VSI-QA\_AUTOMATION_\Mobile - Maestro\arthaqu-mobile-automation
+
+
+Command Login Development + HTML Report
+---------------------------------------
+
+maestro test `
+  --format html-detailed `
+  --output .maestro/reports/login-report.html `
+  --test-output-dir=.maestro/cli-results `
+  --debug-output=.maestro/debug `
+  -e APP_ID=io.arthaqu.debug `
+  -e USERNAME=087879998992 `
+  -e PASSWORD="DiMarzio9931!" `
+  -e PIN=103040 `
+  flows/01_halaman_login/login/login.yaml
+
+
+Fungsi Folder Output
+--------------------
+
+.maestro/screenshots/
+Digunakan untuk hasil screenshot dari Maestro Studio.
+
+.maestro/cli-results/
+Digunakan untuk hasil screenshot dan artifact test dari Maestro CLI.
+
+.maestro/debug/
+Digunakan untuk menyimpan debug output/log dari Maestro CLI.
+
+.maestro/reports/
+Digunakan untuk menyimpan file report hasil running CLI.
+
+Contoh report:
+- .maestro/reports/login-report.html
+
+
+Catatan Penting
+---------------
+
+1. Pastikan folder .maestro/reports sudah ada sebelum menjalankan command.
+
+Jika belum ada, buat folder terlebih dahulu:
+
+New-Item -ItemType Directory -Force .maestro\reports
+
+
+2. Untuk saat ini command CLI menggunakan parameter -e karena env dari data/env/devel.yaml belum terbaca langsung oleh Maestro CLI di environment ini.
+
+Jika data login berubah, cukup sesuaikan nilai:
+- APP_ID
+- USERNAME
+- PASSWORD
+- PIN
+
+
+3. Nilai runtime dari evalScript, misalnya saldo_sebelum, tidak tampil langsung di HTML report bawaan Maestro.
+
+Nilai tersebut tersimpan di maestro.log.
+
+Contoh log:
+
+JsConsole: === SALDO SEBELUM: Rp1.820.640 ===
+
+Lokasi log:
+
+.maestro/debug/.maestro/tests/<tanggal-running>/maestro.log
