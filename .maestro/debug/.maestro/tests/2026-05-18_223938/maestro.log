@@ -1,0 +1,637 @@
+22:39:38.303 [ INFO] maestro.cli.report.TestDebugReporter.logSystemInfo: Debug output path: D:\1_Kerjaan VSI-QA\_AUTOMATION_\Mobile - Maestro\arthaqu-mobile-automation\.maestro\debug\.maestro\tests\2026-05-18_223938
+22:39:38.307 [ INFO] MAESTRO.logSystemInfo: ---- System Info ----
+22:39:38.307 [ INFO] MAESTRO.logSystemInfo: Maestro Version: 2.5.1
+22:39:38.309 [ INFO] MAESTRO.logSystemInfo: CI: Undefined
+22:39:38.309 [ INFO] MAESTRO.logSystemInfo: OS Name: Windows 11
+22:39:38.309 [ INFO] MAESTRO.logSystemInfo: OS Version: 10.0
+22:39:38.310 [ INFO] MAESTRO.logSystemInfo: Architecture: amd64
+22:39:38.311 [ INFO] MAESTRO.logSystemInfo: Java Version: 17
+22:39:38.312 [ INFO] MAESTRO.logSystemInfo: Xcode Version: null
+22:39:38.316 [ INFO] MAESTRO.logSystemInfo: Flutter Version: Undefined
+22:39:38.317 [ INFO] MAESTRO.logSystemInfo: Flutter Channel: Undefined
+22:39:38.317 [ INFO] MAESTRO.logSystemInfo: ---------------------
+22:39:39.212 [DEBUG] io.micrometer.common.util.internal.logging.InternalLoggerFactory.newDefaultFactory: Using SLF4J as the default logging framework
+22:39:39.242 [ INFO] maestro.cli.command.TestCommand.runShardSuite: [shard 1] Selected device emulator-5554 using port 7001 with execution plan ExecutionPlan(flowsToRun=[D:\1_Kerjaan VSI-QA\_AUTOMATION_\Mobile - Maestro\arthaqu-mobile-automation\flows\01_halaman_login\login\login.yaml], sequence=FlowSequence(flows=[], continueOnFailure=true), workspaceConfig=WorkspaceConfig(flows=null, includeTags=null, excludeTags=null, executionOrder=null, baselineBranch=null, notifications=null, disableRetries=false, platform=PlatformConfiguration(android=AndroidConfiguration(disableAnimations=false), ios=IOSConfiguration(disableAnimations=false, snapshotKeyHonorModalViews=null)), testOutputDir=null))
+22:39:41.967 [ INFO] maestro.cli.runner.TestRunner.runSingle$lambda$0: Running flow login.yaml...
+22:39:42.009 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Getting device info
+22:39:42.188 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Got device info: DeviceInfo(platform=ANDROID, widthPixels=1080, heightPixels=2400, widthGrid=1080, heightGrid=2400)
+22:39:42.317 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Define variables RUNNING
+22:39:42.325 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Define variables metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(defineVariablesCommand=DefineVariablesCommand(env={APP_ID=io.arthaqu.debug, USERNAME=087879998992, PASSWORD=DiMarzio9931!, PIN=103040, MAESTRO_FILENAME=login, MAESTRO_DEVICE_UDID=emulator-5554, MAESTRO_SHARD_ID=1, MAESTRO_SHARD_INDEX=0}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:42.329 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Define variables COMPLETED
+22:39:42.346 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Apply configuration RUNNING
+22:39:43.293 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Apply configuration metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:43.296 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Apply configuration COMPLETED
+22:39:43.297 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ../../../subflows/start_aplikasi.yaml RUNNING
+22:39:43.338 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ../../../subflows/start_aplikasi.yaml metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(runFlowCommand=RunFlowCommand(commands=[MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), MaestroCommand(launchAppCommand=LaunchAppCommand(appId=${APP_ID}, clearState=null, clearKeychain=null, stopApp=null, permissions=null, launchArguments=null, label=null, optional=false)), MaestroCommand(runFlowCommand=RunFlowCommand(commands=[MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter = 1}, label=null, optional=false)), MaestroCommand(repeatCommand=RepeatCommand(times=null, condition=Condition(platform=null, visible=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), commands=[MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=${"landing_page/LandingPage - " + output.counter + ".png"}, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(waitForAnimationToEndCommand=WaitForAnimationToEndCommand(timeout=null, label=null, optional=false)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false))], label=null, optional=false)), MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=landing_page/LandingPage - Terakhir, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Mulai Sekarang, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true))], condition=null, sourceDescription=../flows/support/pendukung_start_aplikasi/landing_page.yaml, config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), MaestroCommand(runFlowCommand=RunFlowCommand(commands=[MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter = 1}, label=null, optional=false)), MaestroCommand(repeatCommand=RepeatCommand(times=null, condition=Condition(platform=null, visible=ElementSelector(textRegex=While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), commands=[MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=${"landing_pageapp_permissions/AppPermission - " + output.counter + ".png"}, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=While using the app|Saat aplikasi digunakan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Allow|Izinkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=OK|Okey|Mengerti, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false))], label=null, optional=false))], condition=null, sourceDescription=../flows/support/pendukung_start_aplikasi/app_permissions.yaml, config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false))], condition=null, sourceDescription=../../../subflows/start_aplikasi.yaml, config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:43.341 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Apply configuration RUNNING
+22:39:43.345 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Apply configuration metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:43.346 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Apply configuration COMPLETED
+22:39:43.347 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Launch app "${APP_ID}" RUNNING
+22:39:43.355 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Launch app "${APP_ID}" metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(launchAppCommand=LaunchAppCommand(appId=io.arthaqu.debug, clearState=null, clearKeychain=null, stopApp=null, permissions=null, launchArguments=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:44.815 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sec.android.provider.badge.permission.READ for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sec.android.provider.badge.permission.READ: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sec.android.provider.badge.permission.READ
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:44.833 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sec.android.provider.badge.permission.WRITE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sec.android.provider.badge.permission.WRITE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sec.android.provider.badge.permission.WRITE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:44.852 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.htc.launcher.permission.READ_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.htc.launcher.permission.READ_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.htc.launcher.permission.READ_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:44.873 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.htc.launcher.permission.UPDATE_SHORTCUT for app io.arthaqu.debug: pm grant io.arthaqu.debug com.htc.launcher.permission.UPDATE_SHORTCUT: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:44.892 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sonyericsson.home.permission.BROADCAST_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sonyericsson.home.permission.BROADCAST_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:44.910 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sonymobile.home.permission.PROVIDER_INSERT_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sonymobile.home.permission.PROVIDER_INSERT_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:44.929 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.anddoes.launcher.permission.UPDATE_COUNT for app io.arthaqu.debug: pm grant io.arthaqu.debug com.anddoes.launcher.permission.UPDATE_COUNT: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.anddoes.launcher.permission.UPDATE_COUNT
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:44.947 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.majeur.launcher.permission.UPDATE_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.majeur.launcher.permission.UPDATE_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.majeur.launcher.permission.UPDATE_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:44.967 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.huawei.android.launcher.permission.CHANGE_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.huawei.android.launcher.permission.CHANGE_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.huawei.android.launcher.permission.CHANGE_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:44.989 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.huawei.android.launcher.permission.READ_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.huawei.android.launcher.permission.READ_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.huawei.android.launcher.permission.READ_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:45.010 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.huawei.android.launcher.permission.WRITE_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.huawei.android.launcher.permission.WRITE_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.huawei.android.launcher.permission.WRITE_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:45.030 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission android.permission.READ_APP_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug android.permission.READ_APP_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission android.permission.READ_APP_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:45.049 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.oppo.launcher.permission.READ_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.oppo.launcher.permission.READ_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.oppo.launcher.permission.READ_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:45.067 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.oppo.launcher.permission.WRITE_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.oppo.launcher.permission.WRITE_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.oppo.launcher.permission.WRITE_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:45.085 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission me.everything.badger.permission.BADGE_COUNT_READ for app io.arthaqu.debug: pm grant io.arthaqu.debug me.everything.badger.permission.BADGE_COUNT_READ: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission me.everything.badger.permission.BADGE_COUNT_READ
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:45.104 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission me.everything.badger.permission.BADGE_COUNT_WRITE for app io.arthaqu.debug: pm grant io.arthaqu.debug me.everything.badger.permission.BADGE_COUNT_WRITE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission me.everything.badger.permission.BADGE_COUNT_WRITE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:39:45.149 [ INFO] maestro.Maestro.launchApp$lambda$2: Launching app io.arthaqu.debug
+22:39:45.149 [ INFO] maestro.Maestro.launchApp$lambda$2: Stopping io.arthaqu.debug app during launch
+22:39:45.235 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Launch app "${APP_ID}" COMPLETED
+22:39:45.236 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ../flows/support/pendukung_start_aplikasi/landing_page.yaml RUNNING
+22:39:45.243 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ../flows/support/pendukung_start_aplikasi/landing_page.yaml metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(runFlowCommand=RunFlowCommand(commands=[MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter = 1}, label=null, optional=false)), MaestroCommand(repeatCommand=RepeatCommand(times=null, condition=Condition(platform=null, visible=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), commands=[MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=${"landing_page/LandingPage - " + output.counter + ".png"}, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(waitForAnimationToEndCommand=WaitForAnimationToEndCommand(timeout=null, label=null, optional=false)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false))], label=null, optional=false)), MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=landing_page/LandingPage - Terakhir, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Mulai Sekarang, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true))], condition=null, sourceDescription=../flows/support/pendukung_start_aplikasi/landing_page.yaml, config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:45.246 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Apply configuration RUNNING
+22:39:45.251 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Apply configuration metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:45.253 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Apply configuration COMPLETED
+22:39:45.255 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ${output.counter = 1} RUNNING
+22:39:45.258 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ${output.counter = 1} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter = 1}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:45.279 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ${output.counter = 1} COMPLETED
+22:39:45.280 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Repeat while "Lanjutkan" is visible RUNNING
+22:39:45.283 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Repeat while "Lanjutkan" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(repeatCommand=RepeatCommand(times=null, condition=Condition(platform=null, visible=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), commands=[MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=${"landing_page/LandingPage - " + output.counter + ".png"}, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(waitForAnimationToEndCommand=WaitForAnimationToEndCommand(timeout=null, label=null, optional=false)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false))], label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:49.436 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} RUNNING
+22:39:49.446 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=landing_page/LandingPage - 1.png, cropOn=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:49.449 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:39:49.458 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:39:49.781 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} COMPLETED
+22:39:49.782 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Tap on "Lanjutkan" RUNNING
+22:39:49.783 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Tap on "Lanjutkan" metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:49.925 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[655,2181][933,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=655, y=2181, width=278, height=63))
+22:39:50.769 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:39:50.787 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (794, 2212) using hierarchy based logic for wait
+22:39:51.806 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:39:51.807 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Tap on "Lanjutkan" COMPLETED
+22:39:51.808 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Wait for animation to end RUNNING
+22:39:51.810 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Wait for animation to end metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(waitForAnimationToEndCommand=WaitForAnimationToEndCommand(timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:51.815 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+22:39:51.818 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:39:51.819 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:39:52.023 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:39:52.023 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:39:52.358 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Wait for animation to end COMPLETED
+22:39:52.360 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ${output.counter++} RUNNING
+22:39:52.361 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ${output.counter++} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:52.374 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ${output.counter++} COMPLETED
+22:39:52.377 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Repeat while "Lanjutkan" is visible metadata CommandMetadata(numberOfRuns=1, evaluatedCommand=MaestroCommand(repeatCommand=RepeatCommand(times=null, condition=Condition(platform=null, visible=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), commands=[MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=${"landing_page/LandingPage - " + output.counter + ".png"}, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(waitForAnimationToEndCommand=WaitForAnimationToEndCommand(timeout=null, label=null, optional=false)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false))], label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:52.471 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$10: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} PENDING
+22:39:52.473 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$10: Tap on "Lanjutkan" PENDING
+22:39:52.474 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$10: Wait for animation to end PENDING
+22:39:52.476 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$10: Run ${output.counter++} PENDING
+22:39:52.477 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} RUNNING
+22:39:52.484 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=landing_page/LandingPage - 2.png, cropOn=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:52.485 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:39:52.501 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:39:52.623 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} COMPLETED
+22:39:52.624 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Tap on "Lanjutkan" RUNNING
+22:39:52.626 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Tap on "Lanjutkan" metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:52.706 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[655,2181][933,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=655, y=2181, width=278, height=63))
+22:39:53.546 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:39:53.554 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (794, 2212) using hierarchy based logic for wait
+22:39:54.550 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:39:54.550 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Tap on "Lanjutkan" COMPLETED
+22:39:54.551 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Wait for animation to end RUNNING
+22:39:54.552 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Wait for animation to end metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(waitForAnimationToEndCommand=WaitForAnimationToEndCommand(timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:54.556 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+22:39:54.556 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:39:54.556 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:39:54.730 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:39:54.731 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:39:55.068 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Wait for animation to end COMPLETED
+22:39:55.069 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ${output.counter++} RUNNING
+22:39:55.070 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ${output.counter++} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:55.073 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ${output.counter++} COMPLETED
+22:39:55.074 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Repeat while "Lanjutkan" is visible metadata CommandMetadata(numberOfRuns=2, evaluatedCommand=MaestroCommand(repeatCommand=RepeatCommand(times=null, condition=Condition(platform=null, visible=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), commands=[MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=${"landing_page/LandingPage - " + output.counter + ".png"}, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(waitForAnimationToEndCommand=WaitForAnimationToEndCommand(timeout=null, label=null, optional=false)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false))], label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:55.151 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$10: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} PENDING
+22:39:55.152 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$10: Tap on "Lanjutkan" PENDING
+22:39:55.153 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$10: Wait for animation to end PENDING
+22:39:55.153 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$10: Run ${output.counter++} PENDING
+22:39:55.154 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} RUNNING
+22:39:55.158 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=landing_page/LandingPage - 3.png, cropOn=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:55.160 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:39:55.160 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:39:55.364 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} COMPLETED
+22:39:55.365 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Tap on "Lanjutkan" RUNNING
+22:39:55.366 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Tap on "Lanjutkan" metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:55.412 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[655,2181][933,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=655, y=2181, width=278, height=63))
+22:39:56.240 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:39:56.251 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (794, 2212) using hierarchy based logic for wait
+22:39:57.259 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:39:57.259 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Tap on "Lanjutkan" COMPLETED
+22:39:57.260 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Wait for animation to end RUNNING
+22:39:57.261 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Wait for animation to end metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(waitForAnimationToEndCommand=WaitForAnimationToEndCommand(timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:57.267 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+22:39:57.267 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:39:57.267 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:39:57.524 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:39:57.525 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:39:57.889 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Wait for animation to end COMPLETED
+22:39:57.890 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ${output.counter++} RUNNING
+22:39:57.891 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ${output.counter++} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:39:57.893 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ${output.counter++} COMPLETED
+22:39:57.893 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Repeat while "Lanjutkan" is visible metadata CommandMetadata(numberOfRuns=3, evaluatedCommand=MaestroCommand(repeatCommand=RepeatCommand(times=null, condition=Condition(platform=null, visible=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), commands=[MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=${"landing_page/LandingPage - " + output.counter + ".png"}, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Lanjutkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(waitForAnimationToEndCommand=WaitForAnimationToEndCommand(timeout=null, label=null, optional=false)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false))], label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:05.018 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Repeat while "Lanjutkan" is visible COMPLETED
+22:40:05.020 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Take screenshot landing_page/LandingPage - Terakhir RUNNING
+22:40:05.020 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Take screenshot landing_page/LandingPage - Terakhir metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=landing_page/LandingPage - Terakhir, cropOn=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:05.021 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:40:05.027 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:40:05.218 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Take screenshot landing_page/LandingPage - Terakhir COMPLETED
+22:40:05.218 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Tap on (Optional) "Mulai Sekarang" RUNNING
+22:40:05.219 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Tap on (Optional) "Mulai Sekarang" metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Mulai Sekarang, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:05.303 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Mulai Sekarang, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[351,2181][729,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=351, y=2181, width=378, height=63))
+22:40:06.129 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:40:06.140 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 2212) using hierarchy based logic for wait
+22:40:07.757 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:40:07.757 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Tap on (Optional) "Mulai Sekarang" COMPLETED
+22:40:07.758 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ../flows/support/pendukung_start_aplikasi/landing_page.yaml COMPLETED
+22:40:07.759 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ../flows/support/pendukung_start_aplikasi/app_permissions.yaml RUNNING
+22:40:07.762 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ../flows/support/pendukung_start_aplikasi/app_permissions.yaml metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(runFlowCommand=RunFlowCommand(commands=[MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter = 1}, label=null, optional=false)), MaestroCommand(repeatCommand=RepeatCommand(times=null, condition=Condition(platform=null, visible=ElementSelector(textRegex=While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), commands=[MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=${"landing_pageapp_permissions/AppPermission - " + output.counter + ".png"}, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=While using the app|Saat aplikasi digunakan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Allow|Izinkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=OK|Okey|Mengerti, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false))], label=null, optional=false))], condition=null, sourceDescription=../flows/support/pendukung_start_aplikasi/app_permissions.yaml, config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:07.763 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Apply configuration RUNNING
+22:40:07.765 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Apply configuration metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:07.766 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Apply configuration COMPLETED
+22:40:07.767 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ${output.counter = 1} RUNNING
+22:40:07.768 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ${output.counter = 1} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter = 1}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:07.773 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ${output.counter = 1} COMPLETED
+22:40:07.774 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Repeat while "While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK" is visible RUNNING
+22:40:07.775 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Repeat while "While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(repeatCommand=RepeatCommand(times=null, condition=Condition(platform=null, visible=ElementSelector(textRegex=While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), commands=[MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=${"landing_pageapp_permissions/AppPermission - " + output.counter + ".png"}, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=While using the app|Saat aplikasi digunakan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Allow|Izinkan, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=OK|Okey|Mengerti, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.counter++}, label=null, optional=false))], label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:14.894 [ INFO] maestro.orchestra.Orchestra.executeSubflowCommands: [Command execution subflow] CommandSkipped: null
+22:40:14.894 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$8: Repeat while "While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK" is visible SKIPPED
+22:40:14.895 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ../flows/support/pendukung_start_aplikasi/app_permissions.yaml COMPLETED
+22:40:14.895 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ../../../subflows/start_aplikasi.yaml COMPLETED
+22:40:14.896 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Assert that id: btnLogin is visible RUNNING
+22:40:14.896 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that id: btnLogin is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=null, idRegex=btnLogin, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:14.967 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Assert that id: btnLogin is visible COMPLETED
+22:40:14.968 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ../../../subflows/auth/do_login.yaml RUNNING
+22:40:14.970 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ../../../subflows/auth/do_login.yaml metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(runFlowCommand=RunFlowCommand(commands=[MaestroCommand(defineVariablesCommand=DefineVariablesCommand(env={INPUT_USERNAME=${USERNAME}, INPUT_PASSWORD=${PASSWORD}}, label=null, optional=false)), MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=null, idRegex=btnLogin, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=null, idRegex=etUsername, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(eraseTextCommand=EraseTextCommand(charactersToErase=20, label=null, optional=false)), MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=login\HalamanLogin, cropOn=null, label=null, optional=false)), MaestroCommand(inputTextCommand=InputTextCommand(text=${INPUT_USERNAME}, label=null, optional=false)), MaestroCommand(hideKeyboardCommand=HideKeyboardCommand()), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=null, idRegex=etPassword, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(eraseTextCommand=EraseTextCommand(charactersToErase=50, label=null, optional=false)), MaestroCommand(inputTextCommand=InputTextCommand(text=${INPUT_PASSWORD}, label=null, optional=false)), MaestroCommand(hideKeyboardCommand=HideKeyboardCommand()), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Show password, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=login\HalamanLogin - Input Username Password, cropOn=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=null, idRegex=btnLogin, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false))], condition=null, sourceDescription=../../../subflows/auth/do_login.yaml, config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:14.972 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Define variables RUNNING
+22:40:14.977 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Define variables metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(defineVariablesCommand=DefineVariablesCommand(env={INPUT_USERNAME=087879998992, INPUT_PASSWORD=DiMarzio9931!}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:14.978 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Define variables COMPLETED
+22:40:14.979 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Apply configuration RUNNING
+22:40:14.982 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Apply configuration metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:14.983 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Apply configuration COMPLETED
+22:40:14.983 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Assert that id: btnLogin is visible RUNNING
+22:40:14.984 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that id: btnLogin is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=null, idRegex=btnLogin, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:15.062 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Assert that id: btnLogin is visible COMPLETED
+22:40:15.062 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Tap on id: etUsername RUNNING
+22:40:15.063 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Tap on id: etUsername metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=null, idRegex=etUsername, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:15.133 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=087879998992, accessibilityText=, hintText=Username, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/etUsername, clickable=true, bounds=[168,1460][996,1565], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=168, y=1460, width=828, height=105))
+22:40:16.001 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:40:16.004 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (582, 1512) using hierarchy based logic for wait
+22:40:17.432 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:40:17.432 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Tap on id: etUsername COMPLETED
+22:40:17.433 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Erase 20 characters RUNNING
+22:40:17.433 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Erase 20 characters metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(eraseTextCommand=EraseTextCommand(charactersToErase=20, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:17.437 [ INFO] maestro.Maestro.eraseText$lambda$50: Erasing 20 characters
+22:40:18.858 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Erase 20 characters COMPLETED
+22:40:18.859 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Take screenshot login\HalamanLogin RUNNING
+22:40:18.859 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Take screenshot login\HalamanLogin metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=login\HalamanLogin, cropOn=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:18.861 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:40:18.862 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:40:18.997 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Take screenshot login\HalamanLogin COMPLETED
+22:40:18.998 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Input text ${INPUT_USERNAME} RUNNING
+22:40:19.001 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Input text ${INPUT_USERNAME} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(inputTextCommand=InputTextCommand(text=087879998992, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:19.004 [ INFO] maestro.Maestro.inputText: Inputting text: 087879998992
+22:40:20.916 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Input text ${INPUT_USERNAME} COMPLETED
+22:40:20.916 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Hide Keyboard RUNNING
+22:40:20.917 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Hide Keyboard metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(hideKeyboardCommand=HideKeyboardCommand()), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:20.919 [ INFO] maestro.Maestro.hideKeyboard$lambda$9: Hiding Keyboard
+22:40:22.014 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Hide Keyboard COMPLETED
+22:40:22.015 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Tap on id: etPassword RUNNING
+22:40:22.016 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Tap on id: etPassword metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=null, idRegex=etPassword, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:22.085 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Password, accessibilityText=, hintText=Password, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/etPassword, clickable=true, bounds=[168,1717][996,1822], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=168, y=1717, width=828, height=105))
+22:40:22.917 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:40:22.919 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (582, 1769) using hierarchy based logic for wait
+22:40:24.594 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:40:24.594 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Tap on id: etPassword COMPLETED
+22:40:24.595 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Erase 50 characters RUNNING
+22:40:24.596 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Erase 50 characters metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(eraseTextCommand=EraseTextCommand(charactersToErase=50, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:24.597 [ INFO] maestro.Maestro.eraseText$lambda$50: Erasing 50 characters
+22:40:26.384 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Erase 50 characters COMPLETED
+22:40:26.384 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Input text ${INPUT_PASSWORD} RUNNING
+22:40:26.387 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Input text ${INPUT_PASSWORD} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(inputTextCommand=InputTextCommand(text=DiMarzio9931!, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:26.389 [ INFO] maestro.Maestro.inputText: Inputting text: DiMarzio9931!
+22:40:28.381 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Input text ${INPUT_PASSWORD} COMPLETED
+22:40:28.382 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Hide Keyboard RUNNING
+22:40:28.382 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Hide Keyboard metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(hideKeyboardCommand=HideKeyboardCommand()), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:28.385 [ INFO] maestro.Maestro.hideKeyboard$lambda$9: Hiding Keyboard
+22:40:29.347 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Hide Keyboard COMPLETED
+22:40:29.348 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Tap on "Show password" RUNNING
+22:40:29.349 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Tap on "Show password" metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Show password, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:29.418 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=Show password, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/text_input_end_icon, clickable=true, bounds=[870,1717][996,1822], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.ImageButton, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=870, y=1717, width=126, height=105))
+22:40:30.237 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:40:30.239 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (933, 1769) using hierarchy based logic for wait
+22:40:30.950 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:40:30.950 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Tap on "Show password" COMPLETED
+22:40:30.951 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Take screenshot login\HalamanLogin - Input Username Password RUNNING
+22:40:30.951 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Take screenshot login\HalamanLogin - Input Username Password metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=login\HalamanLogin - Input Username Password, cropOn=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:30.952 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:40:30.954 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:40:31.112 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Take screenshot login\HalamanLogin - Input Username Password COMPLETED
+22:40:31.114 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Tap on id: btnLogin RUNNING
+22:40:31.114 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Tap on id: btnLogin metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=null, idRegex=btnLogin, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:31.185 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Masuk, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/btnLogin, clickable=true, bounds=[569,1930][996,2035], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=569, y=1930, width=427, height=105))
+22:40:32.012 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:40:32.015 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (782, 1982) using hierarchy based logic for wait
+22:40:33.403 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:40:33.403 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Tap on id: btnLogin COMPLETED
+22:40:33.403 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ../../../subflows/auth/do_login.yaml COMPLETED
+22:40:33.404 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ../../support/pendukung_login/ubah_pin.yaml when ".*ubah PIN.*" is visible RUNNING
+22:40:33.408 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ../../support/pendukung_login/ubah_pin.yaml when ".*ubah PIN.*" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(runFlowCommand=RunFlowCommand(commands=[MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Ubah PIN, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(runFlowCommand=RunFlowCommand(commands=[MaestroCommand(defineVariablesCommand=DefineVariablesCommand(env={INPUT_PIN=${PIN}, INPUT_PIN_BARU=${PIN_BARU}, INPUT_KONFIRMASI_PIN=${KONFIRMASI_PIN}}, label=null, optional=false)), MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=Ubah PIN, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=Masukan PIN anda, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=null, idRegex=etPin0, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(inputTextCommand=InputTextCommand(text=${INPUT_PIN}, label=null, optional=false)), MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=Buat PIN Baru, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=null, idRegex=etPin, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(inputTextCommand=InputTextCommand(text=${INPUT_PIN_BARU}, label=null, optional=false)), MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=Konfirmasi PIN Baru, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=null, idRegex=etPin1, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), MaestroCommand(inputTextCommand=InputTextCommand(text=${INPUT_KONFIRMASI_PIN}, label=null, optional=false)), MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=PIN berhasil diubah, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=TUTUP, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false))], condition=null, sourceDescription=../../../subflows/keamanan/do_ubah_pin.yaml, config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false))], condition=Condition(platform=null, visible=ElementSelector(textRegex=.*ubah PIN.*, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), sourceDescription=../../support/pendukung_login/ubah_pin.yaml, config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:40.484 [ INFO] maestro.orchestra.Orchestra.executeCommands: [Command execution] CommandSkipped: null
+22:40:40.485 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$8: Run ../../support/pendukung_login/ubah_pin.yaml when ".*ubah PIN.*" is visible SKIPPED
+22:40:40.485 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ../../support/pendukung_login/product_tour.yaml when "Selanjutnya" is visible RUNNING
+22:40:40.488 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ../../support/pendukung_login/product_tour.yaml when "Selanjutnya" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(runFlowCommand=RunFlowCommand(commands=[MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=${APP_ID}, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), MaestroCommand(repeatCommand=RepeatCommand(times=null, condition=Condition(platform=null, visible=ElementSelector(textRegex=Selanjutnya, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), commands=[MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=Selanjutnya, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=true, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=true)), MaestroCommand(waitForAnimationToEndCommand=WaitForAnimationToEndCommand(timeout=null, label=null, optional=false))], label=null, optional=false))], condition=Condition(platform=null, visible=ElementSelector(textRegex=Selanjutnya, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), sourceDescription=../../support/pendukung_login/product_tour.yaml, config=MaestroConfig(appId=io.arthaqu.debug, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:40.572 [ INFO] maestro.orchestra.Orchestra.executeCommands: [Command execution] CommandSkipped: null
+22:40:40.573 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$8: Run ../../support/pendukung_login/product_tour.yaml when "Selanjutnya" is visible SKIPPED
+22:40:40.573 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Assert that "Deposit anda" is visible RUNNING
+22:40:40.574 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "Deposit anda" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=Deposit anda, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:40.619 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Assert that "Deposit anda" is visible COMPLETED
+22:40:40.620 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Assert that "Beranda" is visible RUNNING
+22:40:40.620 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "Beranda" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=Beranda, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:40.664 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Assert that "Beranda" is visible COMPLETED
+22:40:40.665 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Tap on id: mata RUNNING
+22:40:40.665 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Tap on id: mata metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(tapOnElementCommand=TapOnElementCommand(selector=ElementSelector(textRegex=null, idRegex=mata, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), retryIfNoChange=false, waitUntilVisible=false, longPress=false, repeat=null, waitToSettleTimeoutMs=null, relativePoint=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:40.707 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/mata, clickable=true, bounds=[55,394][137,476], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.ImageButton, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=55, y=394, width=82, height=82))
+22:40:41.540 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:40:41.541 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (96, 435) using hierarchy based logic for wait
+22:40:42.266 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:40:42.266 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Tap on id: mata COMPLETED
+22:40:42.267 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Assert that id: textValueBalance is visible RUNNING
+22:40:42.268 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that id: textValueBalance is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=null, idRegex=textValueBalance, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:42.316 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Assert that id: textValueBalance is visible COMPLETED
+22:40:42.317 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Copy text from element with id: textValueBalance RUNNING
+22:40:42.318 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Copy text from element with id: textValueBalance metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(copyTextFromCommand=CopyTextFromCommand(selector=ElementSelector(textRegex=null, idRegex=textValueBalance, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:42.366 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Copy text from element with id: textValueBalance COMPLETED
+22:40:42.367 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ${output.saldo_sebelum = maestro.copiedText} RUNNING
+22:40:42.368 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ${output.saldo_sebelum = maestro.copiedText} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${output.saldo_sebelum = maestro.copiedText}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:42.370 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ${output.saldo_sebelum = maestro.copiedText} COMPLETED
+22:40:42.371 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Run ${console.log("=== SALDO SEBELUM: " + output.saldo_sebelum + " ===")} RUNNING
+22:40:42.371 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ${console.log("=== SALDO SEBELUM: " + output.saldo_sebelum + " ===")} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${console.log("=== SALDO SEBELUM: " + output.saldo_sebelum + " ===")}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:42.380 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Run ${console.log("=== SALDO SEBELUM: " + output.saldo_sebelum + " ===")} metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(evalScriptCommand=EvalScriptCommand(scriptString=${console.log("=== SALDO SEBELUM: " + output.saldo_sebelum + " ===")}, label=null, optional=false)), logMessages=[=== SALDO SEBELUM: Rp1.820.640 ===], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:42.381 [ INFO] maestro.orchestra.Orchestra.executeCommands$lambda$19$lambda$17: JsConsole: === SALDO SEBELUM: Rp1.820.640 ===
+22:40:42.382 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Run ${console.log("=== SALDO SEBELUM: " + output.saldo_sebelum + " ===")} COMPLETED
+22:40:42.384 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Take screenshot Login/Login Berhasil - Beranda RUNNING
+22:40:42.385 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Take screenshot Login/Login Berhasil - Beranda metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(takeScreenshotCommand=TakeScreenshotCommand(path=Login/Login Berhasil - Beranda, cropOn=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+22:40:42.390 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:40:42.392 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:40:42.573 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Take screenshot Login/Login Berhasil - Beranda COMPLETED
+22:40:42.850 [ INFO] maestro.cli.report.TestDebugReporter.deleteOldFiles: Performing purge of logs older than 14 days from D:\1_Kerjaan VSI-QA\_AUTOMATION_\Mobile - Maestro\arthaqu-mobile-automation\.maestro\cli-results

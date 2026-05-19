@@ -1,0 +1,579 @@
+22:46:49.809 [ INFO] maestro.cli.report.TestDebugReporter.logSystemInfo: Debug output path: D:\1_Kerjaan VSI-QA\_AUTOMATION_\Mobile - Maestro\arthaqu-mobile-automation\.maestro\debug\.maestro\tests\2026-05-18_224649
+22:46:49.811 [ INFO] MAESTRO.logSystemInfo: ---- System Info ----
+22:46:49.811 [ INFO] MAESTRO.logSystemInfo: Maestro Version: 2.5.1
+22:46:49.812 [ INFO] MAESTRO.logSystemInfo: CI: Undefined
+22:46:49.813 [ INFO] MAESTRO.logSystemInfo: OS Name: Windows 11
+22:46:49.813 [ INFO] MAESTRO.logSystemInfo: OS Version: 10.0
+22:46:49.813 [ INFO] MAESTRO.logSystemInfo: Architecture: amd64
+22:46:49.815 [ INFO] MAESTRO.logSystemInfo: Java Version: 17
+22:46:49.816 [ INFO] MAESTRO.logSystemInfo: Xcode Version: null
+22:46:49.821 [ INFO] MAESTRO.logSystemInfo: Flutter Version: Undefined
+22:46:49.823 [ INFO] MAESTRO.logSystemInfo: Flutter Channel: Undefined
+22:46:49.823 [ INFO] MAESTRO.logSystemInfo: ---------------------
+22:46:50.714 [DEBUG] io.micrometer.common.util.internal.logging.InternalLoggerFactory.newDefaultFactory: Using SLF4J as the default logging framework
+22:46:50.779 [ INFO] maestro.cli.command.TestCommand.runShardSuite: [shard 1] Selected device emulator-5554 using port 7001 with execution plan ExecutionPlan(flowsToRun=[D:\1_Kerjaan VSI-QA\_AUTOMATION_\Mobile - Maestro\arthaqu-mobile-automation\flows\01_halaman_login\login\login.yaml], sequence=FlowSequence(flows=[], continueOnFailure=true), workspaceConfig=WorkspaceConfig(flows=null, includeTags=null, excludeTags=null, executionOrder=null, baselineBranch=null, notifications=null, disableRetries=false, platform=PlatformConfiguration(android=AndroidConfiguration(disableAnimations=false), ios=IOSConfiguration(disableAnimations=false, snapshotKeyHonorModalViews=null)), testOutputDir=null))
+22:46:53.379 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow:  Running flow login
+22:46:53.390 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Getting device info
+22:46:53.571 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Got device info: DeviceInfo(platform=ANDROID, widthPixels=1080, heightPixels=2400, widthGrid=1080, heightGrid=2400)
+22:46:53.640 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Define variables RUNNING
+22:46:53.644 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Define variables COMPLETED
+22:46:53.645 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+22:46:54.502 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+22:46:54.502 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../../subflows/start_aplikasi.yaml RUNNING
+22:46:54.508 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+22:46:54.511 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+22:46:54.512 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Launch app "${APP_ID}" RUNNING
+22:46:56.005 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sec.android.provider.badge.permission.READ for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sec.android.provider.badge.permission.READ: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sec.android.provider.badge.permission.READ
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.023 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sec.android.provider.badge.permission.WRITE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sec.android.provider.badge.permission.WRITE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sec.android.provider.badge.permission.WRITE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.044 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.htc.launcher.permission.READ_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.htc.launcher.permission.READ_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.htc.launcher.permission.READ_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.065 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.htc.launcher.permission.UPDATE_SHORTCUT for app io.arthaqu.debug: pm grant io.arthaqu.debug com.htc.launcher.permission.UPDATE_SHORTCUT: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.083 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sonyericsson.home.permission.BROADCAST_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sonyericsson.home.permission.BROADCAST_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.101 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sonymobile.home.permission.PROVIDER_INSERT_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sonymobile.home.permission.PROVIDER_INSERT_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.120 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.anddoes.launcher.permission.UPDATE_COUNT for app io.arthaqu.debug: pm grant io.arthaqu.debug com.anddoes.launcher.permission.UPDATE_COUNT: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.anddoes.launcher.permission.UPDATE_COUNT
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.143 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.majeur.launcher.permission.UPDATE_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.majeur.launcher.permission.UPDATE_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.majeur.launcher.permission.UPDATE_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.161 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.huawei.android.launcher.permission.CHANGE_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.huawei.android.launcher.permission.CHANGE_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.huawei.android.launcher.permission.CHANGE_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.181 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.huawei.android.launcher.permission.READ_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.huawei.android.launcher.permission.READ_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.huawei.android.launcher.permission.READ_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.199 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.huawei.android.launcher.permission.WRITE_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.huawei.android.launcher.permission.WRITE_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.huawei.android.launcher.permission.WRITE_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.218 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission android.permission.READ_APP_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug android.permission.READ_APP_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission android.permission.READ_APP_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.238 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.oppo.launcher.permission.READ_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.oppo.launcher.permission.READ_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.oppo.launcher.permission.READ_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.258 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.oppo.launcher.permission.WRITE_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.oppo.launcher.permission.WRITE_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.oppo.launcher.permission.WRITE_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.275 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission me.everything.badger.permission.BADGE_COUNT_READ for app io.arthaqu.debug: pm grant io.arthaqu.debug me.everything.badger.permission.BADGE_COUNT_READ: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission me.everything.badger.permission.BADGE_COUNT_READ
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.293 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission me.everything.badger.permission.BADGE_COUNT_WRITE for app io.arthaqu.debug: pm grant io.arthaqu.debug me.everything.badger.permission.BADGE_COUNT_WRITE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission me.everything.badger.permission.BADGE_COUNT_WRITE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+22:46:56.335 [ INFO] maestro.Maestro.launchApp$lambda$2: Launching app io.arthaqu.debug
+22:46:56.335 [ INFO] maestro.Maestro.launchApp$lambda$2: Stopping io.arthaqu.debug app during launch
+22:46:56.471 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Launch app "${APP_ID}" COMPLETED
+22:46:56.471 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../flows/support/pendukung_start_aplikasi/landing_page.yaml RUNNING
+22:46:56.478 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+22:46:56.481 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+22:46:56.481 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter = 1} RUNNING
+22:46:56.496 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter = 1} COMPLETED
+22:46:56.496 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Repeat while "Lanjutkan" is visible RUNNING
+22:47:00.368 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} RUNNING
+22:47:00.377 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:47:00.379 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:00.658 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} COMPLETED
+22:47:00.660 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Lanjutkan" RUNNING
+22:47:00.824 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[655,2181][933,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=655, y=2181, width=278, height=63))
+22:47:01.650 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:47:01.655 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (794, 2212) using hierarchy based logic for wait
+22:47:02.982 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:47:02.982 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Lanjutkan" COMPLETED
+22:47:02.982 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+22:47:02.989 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+22:47:02.990 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:47:02.990 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:03.251 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:47:03.252 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:03.667 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+22:47:03.667 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+22:47:03.678 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+22:47:03.718 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} PENDING
+22:47:03.718 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Tap on "Lanjutkan" PENDING
+22:47:03.718 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+22:47:03.718 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+22:47:03.718 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} RUNNING
+22:47:03.723 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:47:03.724 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:03.853 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} COMPLETED
+22:47:03.853 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Lanjutkan" RUNNING
+22:47:03.931 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[655,2181][933,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=655, y=2181, width=278, height=63))
+22:47:04.727 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:47:04.729 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (794, 2212) using hierarchy based logic for wait
+22:47:05.755 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:47:05.755 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Lanjutkan" COMPLETED
+22:47:05.756 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+22:47:05.757 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+22:47:05.757 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:47:05.757 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:05.948 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:47:05.948 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:06.254 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+22:47:06.254 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+22:47:06.263 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+22:47:06.350 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} PENDING
+22:47:06.350 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Tap on "Lanjutkan" PENDING
+22:47:06.352 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+22:47:06.352 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+22:47:06.352 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} RUNNING
+22:47:06.355 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:47:06.357 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:06.527 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} COMPLETED
+22:47:06.528 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Lanjutkan" RUNNING
+22:47:06.578 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[655,2181][933,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=655, y=2181, width=278, height=63))
+22:47:07.401 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:47:07.402 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (794, 2212) using hierarchy based logic for wait
+22:47:08.390 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:47:08.390 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Lanjutkan" COMPLETED
+22:47:08.390 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+22:47:08.391 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+22:47:08.391 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:47:08.391 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:08.583 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+22:47:08.584 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:08.935 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+22:47:08.935 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+22:47:08.938 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+22:47:16.021 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Repeat while "Lanjutkan" is visible COMPLETED
+22:47:16.021 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot landing_page/LandingPage - Terakhir RUNNING
+22:47:16.022 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:47:16.023 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:16.232 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot landing_page/LandingPage - Terakhir COMPLETED
+22:47:16.232 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on (Optional) "Mulai Sekarang" RUNNING
+22:47:16.303 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Mulai Sekarang, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[351,2181][729,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=351, y=2181, width=378, height=63))
+22:47:17.120 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:47:17.122 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 2212) using hierarchy based logic for wait
+22:47:18.977 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:47:18.978 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on (Optional) "Mulai Sekarang" COMPLETED
+22:47:18.978 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../flows/support/pendukung_start_aplikasi/landing_page.yaml COMPLETED
+22:47:18.978 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../flows/support/pendukung_start_aplikasi/app_permissions.yaml RUNNING
+22:47:18.981 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+22:47:18.983 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+22:47:18.983 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter = 1} RUNNING
+22:47:18.984 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter = 1} COMPLETED
+22:47:18.984 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Repeat while "While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK" is visible RUNNING
+22:47:26.054 [ INFO] maestro.orchestra.Orchestra.executeSubflowCommands: [Command execution subflow] CommandSkipped: null
+22:47:26.055 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$13: Repeat while "While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK" is visible SKIPPED
+22:47:26.055 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../flows/support/pendukung_start_aplikasi/app_permissions.yaml COMPLETED
+22:47:26.055 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../../../subflows/start_aplikasi.yaml COMPLETED
+22:47:26.055 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that id: btnLogin is visible RUNNING
+22:47:26.128 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that id: btnLogin is visible COMPLETED
+22:47:26.128 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../../subflows/auth/do_login.yaml RUNNING
+22:47:26.132 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Define variables RUNNING
+22:47:26.138 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Define variables COMPLETED
+22:47:26.138 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+22:47:26.139 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+22:47:26.139 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that id: btnLogin is visible RUNNING
+22:47:26.211 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that id: btnLogin is visible COMPLETED
+22:47:26.211 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: etUsername RUNNING
+22:47:26.283 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=087879998992, accessibilityText=, hintText=Username, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/etUsername, clickable=true, bounds=[168,1460][996,1565], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=168, y=1460, width=828, height=105))
+22:47:27.110 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:47:27.111 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (582, 1512) using hierarchy based logic for wait
+22:47:29.182 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:47:29.182 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: etUsername COMPLETED
+22:47:29.182 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Erase 20 characters RUNNING
+22:47:29.185 [ INFO] maestro.Maestro.eraseText$lambda$50: Erasing 20 characters
+22:47:30.842 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Erase 20 characters COMPLETED
+22:47:30.842 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot login\HalamanLogin RUNNING
+22:47:30.843 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:47:30.845 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:30.981 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot login\HalamanLogin COMPLETED
+22:47:30.981 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Input text ${INPUT_USERNAME} RUNNING
+22:47:30.989 [ INFO] maestro.Maestro.inputText: Inputting text: 087879998992
+22:47:32.976 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Input text ${INPUT_USERNAME} COMPLETED
+22:47:32.977 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Hide Keyboard RUNNING
+22:47:32.978 [ INFO] maestro.Maestro.hideKeyboard$lambda$9: Hiding Keyboard
+22:47:34.086 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Hide Keyboard COMPLETED
+22:47:34.086 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: etPassword RUNNING
+22:47:34.153 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Password, accessibilityText=, hintText=Password, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/etPassword, clickable=true, bounds=[168,1717][996,1822], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=168, y=1717, width=828, height=105))
+22:47:34.977 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:47:34.980 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (582, 1769) using hierarchy based logic for wait
+22:47:36.442 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:47:36.442 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: etPassword COMPLETED
+22:47:36.442 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Erase 50 characters RUNNING
+22:47:36.443 [ INFO] maestro.Maestro.eraseText$lambda$50: Erasing 50 characters
+22:47:38.233 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Erase 50 characters COMPLETED
+22:47:38.233 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Input text ${INPUT_PASSWORD} RUNNING
+22:47:38.237 [ INFO] maestro.Maestro.inputText: Inputting text: DiMarzio9931!
+22:47:40.361 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Input text ${INPUT_PASSWORD} COMPLETED
+22:47:40.362 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Hide Keyboard RUNNING
+22:47:40.364 [ INFO] maestro.Maestro.hideKeyboard$lambda$9: Hiding Keyboard
+22:47:41.326 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Hide Keyboard COMPLETED
+22:47:41.326 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Show password" RUNNING
+22:47:41.395 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=Show password, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/text_input_end_icon, clickable=true, bounds=[870,1717][996,1822], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.ImageButton, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=870, y=1717, width=126, height=105))
+22:47:42.213 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:47:42.214 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (933, 1769) using hierarchy based logic for wait
+22:47:42.981 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:47:42.981 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Show password" COMPLETED
+22:47:42.981 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot login\HalamanLogin - Input Username Password RUNNING
+22:47:42.982 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:47:42.984 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:43.141 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot login\HalamanLogin - Input Username Password COMPLETED
+22:47:43.141 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: btnLogin RUNNING
+22:47:43.214 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Masuk, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/btnLogin, clickable=true, bounds=[569,1930][996,2035], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=569, y=1930, width=427, height=105))
+22:47:44.032 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:47:44.034 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (782, 1982) using hierarchy based logic for wait
+22:47:45.228 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:47:45.228 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: btnLogin COMPLETED
+22:47:45.228 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../../../subflows/auth/do_login.yaml COMPLETED
+22:47:45.228 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../support/pendukung_login/ubah_pin.yaml when ".*ubah PIN.*" is visible RUNNING
+22:47:52.290 [ INFO] maestro.orchestra.Orchestra.executeCommands: [Command execution] CommandSkipped: null
+22:47:52.290 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$13: Run ../../support/pendukung_login/ubah_pin.yaml when ".*ubah PIN.*" is visible SKIPPED
+22:47:52.290 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../support/pendukung_login/product_tour.yaml when "Selanjutnya" is visible RUNNING
+22:47:52.374 [ INFO] maestro.orchestra.Orchestra.executeCommands: [Command execution] CommandSkipped: null
+22:47:52.374 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$13: Run ../../support/pendukung_login/product_tour.yaml when "Selanjutnya" is visible SKIPPED
+22:47:52.374 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Deposit anda" is visible RUNNING
+22:47:52.421 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "Deposit anda" is visible COMPLETED
+22:47:52.421 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Beranda" is visible RUNNING
+22:47:52.468 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "Beranda" is visible COMPLETED
+22:47:52.468 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: mata RUNNING
+22:47:52.521 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/mata, clickable=true, bounds=[55,394][137,476], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.ImageButton, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=55, y=394, width=82, height=82))
+22:47:53.356 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+22:47:53.358 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (96, 435) using hierarchy based logic for wait
+22:47:54.072 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+22:47:54.072 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: mata COMPLETED
+22:47:54.072 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that id: textValueBalance is visible RUNNING
+22:47:54.113 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that id: textValueBalance is visible COMPLETED
+22:47:54.113 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Copy text from element with id: textValueBalance RUNNING
+22:47:54.170 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Copy text from element with id: textValueBalance COMPLETED
+22:47:54.170 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.saldo_sebelum = maestro.copiedText} RUNNING
+22:47:54.172 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.saldo_sebelum = maestro.copiedText} COMPLETED
+22:47:54.173 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${console.log("=== SALDO SEBELUM: " + output.saldo_sebelum + " ===")} RUNNING
+22:47:54.179 [ INFO] maestro.orchestra.Orchestra.executeCommands$lambda$19$lambda$17: JsConsole: === SALDO SEBELUM: Rp1.820.640 ===
+22:47:54.180 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${console.log("=== SALDO SEBELUM: " + output.saldo_sebelum + " ===")} COMPLETED
+22:47:54.180 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Login/Login Berhasil - Beranda RUNNING
+22:47:54.181 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+22:47:54.183 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+22:47:54.340 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Login/Login Berhasil - Beranda COMPLETED
+22:47:54.600 [ INFO] maestro.cli.report.TestDebugReporter.deleteOldFiles: Performing purge of logs older than 14 days from D:\1_Kerjaan VSI-QA\_AUTOMATION_\Mobile - Maestro\arthaqu-mobile-automation\.maestro\cli-results

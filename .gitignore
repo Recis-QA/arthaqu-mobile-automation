@@ -1,5 +1,2 @@
-.maestro/
-*.log
-.DS_Store
 data/env/devel.yaml
 data/env/prod.yaml
