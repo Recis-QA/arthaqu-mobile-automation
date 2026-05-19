@@ -1,0 +1,26 @@
+# Contoh konfigurasi environment untuk Maestro CLI.
+# Copy file ini menjadi devel.yaml atau prod.yaml di folder yang sama,
+# lalu isi nilainya sesuai environment lokal masing-masing.
+
+env:
+  # Konfigurasi Aplikasi
+  APP_ID: "io.arthaqu.debug"
+  IS_PROD: "false"
+
+  # Waktu Tunggu
+  GLOBAL_TIMEOUT: "80000"
+
+  # Akun Testing
+  USERNAME: ""
+  PASSWORD: ""
+  PIN: ""
+
+  # Data Registrasi (Daftar)
+  DAFTAR_NO_HP: ""
+  DAFTAR_NAMA: ""
+  DAFTAR_EMAIL: ""
+  DAFTAR_ALAMAT: ""
+  DAFTAR_NO_HP_REFERRAL: ""
+
+  # OTP: pilih "WA" atau "SMS"
+  DAFTAR_TIPE_OTP: "WA"
