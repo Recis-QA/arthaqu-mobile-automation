@@ -1,0 +1,368 @@
+<html>
+  <head>
+    <title>Maestro Test Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="card mb-4">
+      <div class="card-body">
+        <h1 class="mt-5 text-center">Flow Execution Summary</h1>
+<br>Test Result: FAILED<br>Duration: 2m 59s<br>Start Time: null<br><br>
+        <div class="card-group mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Total number of Flows</h5>
+              <h3 class="card-text text-center">1</h3>
+            </div>
+          </div>
+          <div class="card text-white bg-danger">
+            <div class="card-body">
+              <h5 class="card-title text-center">Failed Flows</h5>
+              <h3 class="card-text text-center">1</h3>
+            </div>
+          </div>
+          <div class="card text-white bg-success">
+            <div class="card-body">
+              <h5 class="card-title text-center">Successful Flows</h5>
+              <h3 class="card-text text-center">0</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card border-danger mb-3">
+          <div class="card-body text-danger"><b>Failed Flow</b><br>
+            <p class="card-text">daftar<br></p>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-header">
+            <h5 class="mb-0"><button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#flow-0-daftar" aria-expanded="false" aria-controls="flow-0-daftar">daftar : ERROR</button></h5>
+          </div>
+          <div class="collapse" id="flow-0-daftar">
+            <div class="card-body">
+              <p class="card-text">Status: ERROR<br>Duration: 2m 59s<br>Start Time: null<br>File Name: daftar<br></p>
+              <p class="card-text text-danger">Assertion is false: &quot;Verifikasi Pendaftaran&quot; is visible</p>
+              <h6 class="mt-3 mb-3">Test Steps (100)</h6>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">1. Define variables</span></span><span class="badge bg-light text-dark">7ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">2. Apply configuration</span></span><span class="badge bg-light text-dark">1.1s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">3. Run ../../../subflows/start_aplikasi.yaml</span></span><span class="badge bg-light text-dark">33.1s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">4. Apply configuration</span></span><span class="badge bg-light text-dark">4ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">5. Launch app &quot;${APP_ID}&quot;</span></span><span class="badge bg-light text-dark">3.4s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">6. Run ../flows/support/pendukung_start_aplikasi/landing_page.yaml</span></span><span class="badge bg-light text-dark">22.6s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">7. Apply configuration</span></span><span class="badge bg-light text-dark">4ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">8. Run ${output.counter = 1}</span></span><span class="badge bg-light text-dark">25ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">9. Repeat while &quot;Lanjutkan&quot; is visible</span></span><span class="badge bg-light text-dark">19.3s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">10. Take screenshot ${&quot;landing_page/LandingPage - &quot; + output.counter + &quot;.png&quot;}</span></span><span class="badge bg-light text-dark">212ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">11. Tap on &quot;Lanjutkan&quot;</span></span><span class="badge bg-light text-dark">1.9s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">12. Wait for animation to end</span></span><span class="badge bg-light text-dark">651ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">13. Run ${output.counter++}</span></span><span class="badge bg-light text-dark">3ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">14. Take screenshot landing_page/LandingPage - Terakhir</span></span><span class="badge bg-light text-dark">191ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">15. Tap on (Optional) &quot;Mulai Sekarang&quot;</span></span><span class="badge bg-light text-dark">3.2s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">16. Run ../flows/support/pendukung_start_aplikasi/app_permissions.yaml</span></span><span class="badge bg-light text-dark">7.1s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">17. Apply configuration</span></span><span class="badge bg-light text-dark">2ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">18. Run ${output.counter = 1}</span></span><span class="badge bg-light text-dark">2ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>⏭️ <span class="step-name">19. Repeat while &quot;While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK&quot; is visible</span></span><span class="badge bg-light text-dark">&lt;1ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">20. Assert that id: btnRegister is visible</span></span><span class="badge bg-light text-dark">71ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">21. Take screenshot Daftar/1.Halaman Login</span></span><span class="badge bg-light text-dark">172ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">22. Tap on id: btnRegister</span></span><span class="badge bg-light text-dark">2.9s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">23. Assert that &quot;Daftar&quot; is visible</span></span><span class="badge bg-light text-dark">68ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">24. Take screenshot Daftar/2.Form Daftar</span></span><span class="badge bg-light text-dark">139ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">25. Run ../../../subflows/daftar/isi_form_daftar.yaml</span></span><span class="badge bg-light text-dark">22.4s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">26. Define variables</span></span><span class="badge bg-light text-dark">8ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">27. Apply configuration</span></span><span class="badge bg-light text-dark">1ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">28. Tap on id: etPhone</span></span><span class="badge bg-light text-dark">3.3s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">29. Input text ${INPUT_NO_HP}</span></span><span class="badge bg-light text-dark">2.2s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">30. Tap on id: etName</span></span><span class="badge bg-light text-dark">3.0s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">31. Input text ${INPUT_NAMA}</span></span><span class="badge bg-light text-dark">3.1s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">32. Tap on id: etEmail</span></span><span class="badge bg-light text-dark">3.0s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">33. Input text ${INPUT_EMAIL}</span></span><span class="badge bg-light text-dark">3.0s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">34. Tap on id: etAddress</span></span><span class="badge bg-light text-dark">3.0s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">35. Input text ${INPUT_ALAMAT}</span></span><span class="badge bg-light text-dark">1.8s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">36. Take screenshot Daftar/2.Form Daftar - Diisi</span></span><span class="badge bg-light text-dark">133ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">37. Tap on &quot;Lanjutkan&quot;</span></span><span class="badge bg-light text-dark">1.8s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">38. Assert that &quot;Referral&quot; is visible</span></span><span class="badge bg-light text-dark">73ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">39. Take screenshot Daftar/3.Form Referral</span></span><span class="badge bg-light text-dark">122ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">40. Run ../../../subflows/daftar/isi_form_referral.yaml</span></span><span class="badge bg-light text-dark">5.5s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">41. Define variables</span></span><span class="badge bg-light text-dark">1ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">42. Apply configuration</span></span><span class="badge bg-light text-dark">1ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">43. Tap on id: etReffPhone</span></span><span class="badge bg-light text-dark">3.0s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">44. Input text ${INPUT_NO_HP_REFERRAL</span></span><span class="badge bg-light text-dark">2.5s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">45. Take screenshot Daftar/3.Form Referral - Diisi</span></span><span class="badge bg-light text-dark">120ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">46. Tap on &quot;Lanjutkan&quot;</span></span><span class="badge bg-light text-dark">3.1s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">47. Assert that &quot;Syarat dan Ketentuan&quot; is visible</span></span><span class="badge bg-light text-dark">194ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">48. Take screenshot Daftar/4.Syarat dan Ketentuan</span></span><span class="badge bg-light text-dark">158ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">49. Run ../../../subflows/daftar/syarat_dan_ketentuan.yaml</span></span><span class="badge bg-light text-dark">38.7s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">50. Apply configuration</span></span><span class="badge bg-light text-dark">1ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">51. Run ${output.counter = 1}</span></span><span class="badge bg-light text-dark">2ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">52. Repeat while id: checkboxRegister is not visible</span></span><span class="badge bg-light text-dark">36.2s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">53. Take screenshot ${&quot;daftar/4.s&amp;k - &quot; + output.counter + &quot;.png&quot;}</span></span><span class="badge bg-light text-dark">156ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">54. Swipe from (50%, 80%) to (50%, 20%) in 300 ms</span></span><span class="badge bg-light text-dark">1.4s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">55. Wait for animation to end</span></span><span class="badge bg-light text-dark">455ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">56. Run ${output.counter++}</span></span><span class="badge bg-light text-dark">2ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">57. Assert that id: checkboxRegister is visible</span></span><span class="badge bg-light text-dark">198ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">58. Take screenshot ${&quot;daftar/4.s&amp;k - &quot; + output.counter + &quot;.png&quot;}</span></span><span class="badge bg-light text-dark">154ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">59. Tap on &quot;.*membaca dan menyetujui.*&quot;</span></span><span class="badge bg-light text-dark">2.1s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">60. Take screenshot Daftar/4.Form Referral - dicentang</span></span><span class="badge bg-light text-dark">179ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">61. Tap on &quot;Berikutnya&quot;</span></span><span class="badge bg-light text-dark">2.5s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">62. Assert that &quot;Kebijakan Privasi&quot; is visible</span></span><span class="badge bg-light text-dark">121ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">63. Take screenshot Daftar/5.Kebijakan Privasi</span></span><span class="badge bg-light text-dark">158ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">64. Run ../../../subflows/daftar/kebijakan_privasi.yaml</span></span><span class="badge bg-light text-dark">18.5s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">65. Apply configuration</span></span><span class="badge bg-light text-dark">0ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">66. Run ${output.counter = 1}</span></span><span class="badge bg-light text-dark">1ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">67. Repeat while id: checkboxRegister is not visible</span></span><span class="badge bg-light text-dark">16.2s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">68. Take screenshot ${&quot;daftar/5.Kebijakan Privasi - &quot; + output.counter + &quot;.png&quot;}</span></span><span class="badge bg-light text-dark">210ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">69. Swipe from (50%, 80%) to (50%, 20%) in 300 ms</span></span><span class="badge bg-light text-dark">1.2s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">70. Wait for animation to end</span></span><span class="badge bg-light text-dark">462ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">71. Run ${output.counter++}</span></span><span class="badge bg-light text-dark">3ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">72. Assert that id: checkboxRegister is visible</span></span><span class="badge bg-light text-dark">91ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">73. Take screenshot ${&quot;daftar/5.Kebijakan Privasi - &quot; + output.counter + &quot;.png&quot;}</span></span><span class="badge bg-light text-dark">222ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">74. Tap on &quot;.*membaca dan menyetujui.*&quot;</span></span><span class="badge bg-light text-dark">2.0s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">75. Take screenshot Daftar/5.Kebijakan Privasi - dicentang</span></span><span class="badge bg-light text-dark">214ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">76. Tap on &quot;Berikutnya&quot;</span></span><span class="badge bg-light text-dark">2.3s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">77. Assert that &quot;Customer Consent&quot; is visible</span></span><span class="badge bg-light text-dark">102ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">78. Take screenshot Daftar/6.Customer Consent</span></span><span class="badge bg-light text-dark">165ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">79. Run ../../../subflows/daftar/customer_consent.yaml</span></span><span class="badge bg-light text-dark">19.4s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">80. Apply configuration</span></span><span class="badge bg-light text-dark">1ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">81. Run ${output.counter = 1}</span></span><span class="badge bg-light text-dark">2ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">82. Repeat while id: checkboxRegister is not visible</span></span><span class="badge bg-light text-dark">17.3s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">83. Take screenshot ${&quot;daftar/6.Customer Consent - &quot; + output.counter + &quot;.png&quot;}</span></span><span class="badge bg-light text-dark">223ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">84. Swipe from (50%, 80%) to (50%, 20%) in 300 ms</span></span><span class="badge bg-light text-dark">584ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">85. Wait for animation to end</span></span><span class="badge bg-light text-dark">3.2s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">86. Run ${output.counter++}</span></span><span class="badge bg-light text-dark">2ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">87. Assert that id: checkboxRegister is visible</span></span><span class="badge bg-light text-dark">92ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">88. Take screenshot ${&quot;daftar/6.Customer Consent - &quot; + output.counter + &quot;.png&quot;}</span></span><span class="badge bg-light text-dark">160ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">89. Tap on &quot;.*membaca dan menyetujui.*&quot;</span></span><span class="badge bg-light text-dark">1.9s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">90. Take screenshot Daftar/6.Customer Consent - dicentang</span></span><span class="badge bg-light text-dark">200ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">91. Tap on &quot;Daftar&quot;</span></span><span class="badge bg-light text-dark">3.1s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">92. Assert that &quot;.*verifikasi OTP.*&quot; is visible</span></span><span class="badge bg-light text-dark">70ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">93. Take screenshot Daftar/7.Verifikasi OTP - 1</span></span><span class="badge bg-light text-dark">181ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>❌ <span class="step-name">94. Run ../../../subflows/daftar/verifikasi_otp.yaml</span></span><span class="badge bg-light text-dark">21.3s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">95. Apply configuration</span></span><span class="badge bg-light text-dark">1ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">96. Run flow when ${DAFTAR_TIPE_OTP == &quot;WA&quot;} is true</span></span><span class="badge bg-light text-dark">2.1s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">97. Tap on &quot;WA&quot;</span></span><span class="badge bg-light text-dark">2.1s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>⏭️ <span class="step-name">98. Run flow when ${DAFTAR_TIPE_OTP == &quot;SMS&quot;} is true</span></span><span class="badge bg-light text-dark">&lt;1ms</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>✅ <span class="step-name">99. Wait for animation to end</span></span><span class="badge bg-light text-dark">1.9s</span></div>
+              </div>
+              <div class="step-item mb-2">
+                <div class="step-header d-flex justify-content-between align-items-center"><span>❌ <span class="step-name">100. Assert that &quot;Verifikasi Pendaftaran&quot; is visible</span></span><span class="badge bg-light text-dark">17.1s</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>.step-item {
+    border-left: 3px solid #dee2e6;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.step-header {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.step-name {
+    font-weight: 500;
+}
+</style>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>

@@ -20,6 +20,20 @@ maestro test `
   -e PIN=103040 `
   flows/01_halaman_login/login/login.yaml
 
+maestro test `
+  --format html-detailed `
+  --output .maestro/reports/daftar-report.html `
+  --test-output-dir=.maestro/cli-results `
+  --debug-output=.maestro/debug `
+  -e APP_ID=io.arthaqu.debug `
+  -e DAFTAR_NO_HP=085121073993 `
+  -e DAFTAR_NAMA="Muhammad Fariz Faizal" `
+  -e DAFTAR_EMAIL="fariz@recis.co.id" `
+  -e DAFTAR_ALAMAT="Kota Cimahi" `
+  -e DAFTAR_NO_HP_REFERRAL=08158828400 `
+  -e DAFTAR_TIPE_OTP=WA `
+  flows/01_halaman_login/daftar/daftar.yaml
+
 
 Fungsi Folder Output
 --------------------

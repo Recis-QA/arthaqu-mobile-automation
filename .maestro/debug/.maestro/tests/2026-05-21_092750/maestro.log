@@ -1,0 +1,960 @@
+09:27:50.490 [ INFO] maestro.cli.report.TestDebugReporter.logSystemInfo: Debug output path: D:\1_Kerjaan VSI-QA\_AUTOMATION_\Mobile - Maestro\arthaqu-mobile-automation\.maestro\debug\.maestro\tests\2026-05-21_092750
+09:27:50.495 [ INFO] MAESTRO.logSystemInfo: ---- System Info ----
+09:27:50.496 [ INFO] MAESTRO.logSystemInfo: Maestro Version: 2.5.1
+09:27:50.498 [ INFO] MAESTRO.logSystemInfo: CI: Undefined
+09:27:50.498 [ INFO] MAESTRO.logSystemInfo: OS Name: Windows 11
+09:27:50.499 [ INFO] MAESTRO.logSystemInfo: OS Version: 10.0
+09:27:50.499 [ INFO] MAESTRO.logSystemInfo: Architecture: amd64
+09:27:50.500 [ INFO] MAESTRO.logSystemInfo: Java Version: 17
+09:27:50.501 [ INFO] MAESTRO.logSystemInfo: Xcode Version: null
+09:27:50.505 [ INFO] MAESTRO.logSystemInfo: Flutter Version: Undefined
+09:27:50.507 [ INFO] MAESTRO.logSystemInfo: Flutter Channel: Undefined
+09:27:50.507 [ INFO] MAESTRO.logSystemInfo: ---------------------
+09:27:51.832 [DEBUG] io.micrometer.common.util.internal.logging.InternalLoggerFactory.newDefaultFactory: Using SLF4J as the default logging framework
+09:27:52.211 [ INFO] maestro.cli.command.TestCommand.runShardSuite: [shard 1] Selected device emulator-5554 using port 7001 with execution plan ExecutionPlan(flowsToRun=[D:\1_Kerjaan VSI-QA\_AUTOMATION_\Mobile - Maestro\arthaqu-mobile-automation\flows\01_halaman_login\daftar\daftar.yaml], sequence=FlowSequence(flows=[], continueOnFailure=true), workspaceConfig=WorkspaceConfig(flows=null, includeTags=null, excludeTags=null, executionOrder=null, baselineBranch=null, notifications=null, disableRetries=false, platform=PlatformConfiguration(android=AndroidConfiguration(disableAnimations=false), ios=IOSConfiguration(disableAnimations=false, snapshotKeyHonorModalViews=null)), testOutputDir=null))
+09:27:57.638 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow:  Running flow daftar
+09:27:57.657 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Getting device info
+09:27:57.928 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Got device info: DeviceInfo(platform=ANDROID, widthPixels=1080, heightPixels=2400, widthGrid=1080, heightGrid=2400)
+09:27:58.045 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Define variables RUNNING
+09:27:58.052 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Define variables COMPLETED
+09:27:58.059 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+09:27:59.139 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+09:27:59.139 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../../subflows/start_aplikasi.yaml RUNNING
+09:27:59.149 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+09:27:59.153 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+09:27:59.153 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Launch app "${APP_ID}" RUNNING
+09:28:02.068 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sec.android.provider.badge.permission.READ for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sec.android.provider.badge.permission.READ: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sec.android.provider.badge.permission.READ
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.088 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sec.android.provider.badge.permission.WRITE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sec.android.provider.badge.permission.WRITE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sec.android.provider.badge.permission.WRITE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.108 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.htc.launcher.permission.READ_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.htc.launcher.permission.READ_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.htc.launcher.permission.READ_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.128 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.htc.launcher.permission.UPDATE_SHORTCUT for app io.arthaqu.debug: pm grant io.arthaqu.debug com.htc.launcher.permission.UPDATE_SHORTCUT: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.147 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sonyericsson.home.permission.BROADCAST_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sonyericsson.home.permission.BROADCAST_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.165 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.sonymobile.home.permission.PROVIDER_INSERT_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.sonymobile.home.permission.PROVIDER_INSERT_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.185 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.anddoes.launcher.permission.UPDATE_COUNT for app io.arthaqu.debug: pm grant io.arthaqu.debug com.anddoes.launcher.permission.UPDATE_COUNT: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.anddoes.launcher.permission.UPDATE_COUNT
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.205 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.majeur.launcher.permission.UPDATE_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.majeur.launcher.permission.UPDATE_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.majeur.launcher.permission.UPDATE_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.227 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.huawei.android.launcher.permission.CHANGE_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug com.huawei.android.launcher.permission.CHANGE_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.huawei.android.launcher.permission.CHANGE_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.246 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.huawei.android.launcher.permission.READ_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.huawei.android.launcher.permission.READ_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.huawei.android.launcher.permission.READ_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.266 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.huawei.android.launcher.permission.WRITE_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.huawei.android.launcher.permission.WRITE_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.huawei.android.launcher.permission.WRITE_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.288 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission android.permission.READ_APP_BADGE for app io.arthaqu.debug: pm grant io.arthaqu.debug android.permission.READ_APP_BADGE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission android.permission.READ_APP_BADGE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.307 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.oppo.launcher.permission.READ_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.oppo.launcher.permission.READ_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.oppo.launcher.permission.READ_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.327 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission com.oppo.launcher.permission.WRITE_SETTINGS for app io.arthaqu.debug: pm grant io.arthaqu.debug com.oppo.launcher.permission.WRITE_SETTINGS: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission com.oppo.launcher.permission.WRITE_SETTINGS
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.345 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission me.everything.badger.permission.BADGE_COUNT_READ for app io.arthaqu.debug: pm grant io.arthaqu.debug me.everything.badger.permission.BADGE_COUNT_READ: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission me.everything.badger.permission.BADGE_COUNT_READ
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.364 [DEBUG] maestro.Maestro.setPermissionInternal: Failed to set permission me.everything.badger.permission.BADGE_COUNT_WRITE for app io.arthaqu.debug: pm grant io.arthaqu.debug me.everything.badger.permission.BADGE_COUNT_WRITE: 
+Exception occurred while executing 'grant':
+java.lang.IllegalArgumentException: Unknown permission me.everything.badger.permission.BADGE_COUNT_WRITE
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:997)
+	at com.android.server.permission.access.permission.PermissionService.access$setRuntimePermissionGranted(PermissionService.kt:111)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted(PermissionService.kt:895)
+	at com.android.server.permission.access.permission.PermissionService.setRuntimePermissionGranted$default(PermissionService.kt:800)
+	at com.android.server.permission.access.permission.PermissionService.grantRuntimePermission(PermissionService.kt:762)
+	at com.android.server.pm.permission.PermissionManagerService.grantRuntimePermission(PermissionManagerService.java:590)
+	at android.permission.PermissionManager.grantRuntimePermissionInternal(PermissionManager.java:670)
+	at android.permission.PermissionManager.grantRuntimePermission(PermissionManager.java:633)
+	at com.android.server.pm.PackageManagerShellCommand.runGrantRevokePermission(PackageManagerShellCommand.java:2714)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:317)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6721)
+	at android.os.Binder.shellCommand(Binder.java:1183)
+	at android.os.Binder.onTransact(Binder.java:961)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4666)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6705)
+	at android.os.Binder.execTransactInternal(Binder.java:1478)
+	at android.os.Binder.execTransact(Binder.java:1418)
+
+09:28:02.407 [ INFO] maestro.Maestro.launchApp$lambda$2: Launching app io.arthaqu.debug
+09:28:02.407 [ INFO] maestro.Maestro.launchApp$lambda$2: Stopping io.arthaqu.debug app during launch
+09:28:02.526 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Launch app "${APP_ID}" COMPLETED
+09:28:02.526 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../flows/support/pendukung_start_aplikasi/landing_page.yaml RUNNING
+09:28:02.532 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+09:28:02.536 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+09:28:02.536 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter = 1} RUNNING
+09:28:02.561 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter = 1} COMPLETED
+09:28:02.562 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Repeat while "Lanjutkan" is visible RUNNING
+09:28:06.290 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} RUNNING
+09:28:06.299 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:28:06.302 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:06.553 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} COMPLETED
+09:28:06.554 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Lanjutkan" RUNNING
+09:28:06.720 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[655,2181][933,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=655, y=2181, width=278, height=63))
+09:28:07.563 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:28:07.581 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (794, 2212) using hierarchy based logic for wait
+09:28:08.573 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:28:08.573 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Lanjutkan" COMPLETED
+09:28:08.573 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:28:08.582 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:28:08.584 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:28:08.584 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:08.905 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:28:08.905 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:09.280 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:28:09.281 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:28:09.286 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:28:09.320 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} PENDING
+09:28:09.320 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Tap on "Lanjutkan" PENDING
+09:28:09.320 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:28:09.320 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:28:09.320 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} RUNNING
+09:28:09.324 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:28:09.340 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:09.490 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} COMPLETED
+09:28:09.490 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Lanjutkan" RUNNING
+09:28:09.570 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[655,2181][933,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=655, y=2181, width=278, height=63))
+09:28:10.398 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:28:10.410 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (794, 2212) using hierarchy based logic for wait
+09:28:11.391 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:28:11.391 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Lanjutkan" COMPLETED
+09:28:11.391 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:28:11.394 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:28:11.394 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:28:11.394 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:11.582 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:28:11.582 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:11.862 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:28:11.862 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:28:11.865 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:28:11.935 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} PENDING
+09:28:11.935 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Tap on "Lanjutkan" PENDING
+09:28:11.935 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:28:11.935 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:28:11.935 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} RUNNING
+09:28:11.941 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:28:11.945 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:12.147 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"landing_page/LandingPage - " + output.counter + ".png"} COMPLETED
+09:28:12.147 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Lanjutkan" RUNNING
+09:28:12.230 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[655,2181][933,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=655, y=2181, width=278, height=63))
+09:28:13.066 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:28:13.069 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (794, 2212) using hierarchy based logic for wait
+09:28:14.065 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:28:14.065 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Lanjutkan" COMPLETED
+09:28:14.065 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:28:14.081 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:28:14.081 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:28:14.081 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:14.330 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:28:14.330 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:14.716 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:28:14.716 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:28:14.719 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:28:21.816 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Repeat while "Lanjutkan" is visible COMPLETED
+09:28:21.816 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot landing_page/LandingPage - Terakhir RUNNING
+09:28:21.817 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:28:21.818 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:22.007 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot landing_page/LandingPage - Terakhir COMPLETED
+09:28:22.007 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on (Optional) "Mulai Sekarang" RUNNING
+09:28:22.085 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Mulai Sekarang, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/textNext, clickable=false, bounds=[351,2181][729,2244], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.TextView, important-for-accessibility=true, error=}, children=[], clickable=false, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=351, y=2181, width=378, height=63))
+09:28:23.500 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:28:23.501 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 2212) using hierarchy based logic for wait
+09:28:25.169 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:28:25.170 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on (Optional) "Mulai Sekarang" COMPLETED
+09:28:25.170 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../flows/support/pendukung_start_aplikasi/landing_page.yaml COMPLETED
+09:28:25.170 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../flows/support/pendukung_start_aplikasi/app_permissions.yaml RUNNING
+09:28:25.173 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+09:28:25.175 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+09:28:25.175 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter = 1} RUNNING
+09:28:25.177 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter = 1} COMPLETED
+09:28:25.177 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Repeat while "While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK" is visible RUNNING
+09:28:32.278 [ INFO] maestro.orchestra.Orchestra.executeSubflowCommands: [Command execution subflow] CommandSkipped: null
+09:28:32.278 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$13: Repeat while "While using the app|Saat aplikasi digunakan|Allow|Izinkan|OK" is visible SKIPPED
+09:28:32.278 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../flows/support/pendukung_start_aplikasi/app_permissions.yaml COMPLETED
+09:28:32.279 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../../../subflows/start_aplikasi.yaml COMPLETED
+09:28:32.279 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that id: btnRegister is visible RUNNING
+09:28:32.350 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that id: btnRegister is visible COMPLETED
+09:28:32.351 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/1.Halaman Login RUNNING
+09:28:32.351 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:28:32.353 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:32.522 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/1.Halaman Login COMPLETED
+09:28:32.523 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: btnRegister RUNNING
+09:28:32.595 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Daftar, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/btnRegister, clickable=true, bounds=[84,1930][511,2035], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=84, y=1930, width=427, height=105))
+09:28:33.418 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:28:33.420 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (297, 1982) using hierarchy based logic for wait
+09:28:35.421 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:28:35.422 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: btnRegister COMPLETED
+09:28:35.422 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Daftar" is visible RUNNING
+09:28:35.490 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "Daftar" is visible COMPLETED
+09:28:35.490 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/2.Form Daftar RUNNING
+09:28:35.492 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:28:35.493 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:35.630 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/2.Form Daftar COMPLETED
+09:28:35.631 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../../subflows/daftar/isi_form_daftar.yaml RUNNING
+09:28:35.634 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Define variables RUNNING
+09:28:35.642 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Define variables COMPLETED
+09:28:35.642 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+09:28:35.643 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+09:28:35.643 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: etPhone RUNNING
+09:28:35.748 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=No HP, accessibilityText=, hintText=No HP, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/etPhone, clickable=true, bounds=[55,608][1025,712], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=55, y=608, width=970, height=104))
+09:28:36.569 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:28:36.571 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 660) using hierarchy based logic for wait
+09:28:38.951 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:28:38.952 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: etPhone COMPLETED
+09:28:38.952 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Input text ${INPUT_NO_HP} RUNNING
+09:28:38.959 [ INFO] maestro.Maestro.inputText: Inputting text: 085121073993
+09:28:41.160 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Input text ${INPUT_NO_HP} COMPLETED
+09:28:41.160 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: etName RUNNING
+09:28:41.237 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Nama (Sesuai KTP), accessibilityText=, hintText=Nama (Sesuai KTP), ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/etName, clickable=true, bounds=[55,768][1025,872], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=55, y=768, width=970, height=104))
+09:28:42.062 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:28:42.064 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 820) using hierarchy based logic for wait
+09:28:44.131 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:28:44.131 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: etName COMPLETED
+09:28:44.131 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Input text ${INPUT_NAMA} RUNNING
+09:28:44.136 [ INFO] maestro.Maestro.inputText: Inputting text: Muhammad Fariz Faizal
+09:28:47.250 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Input text ${INPUT_NAMA} COMPLETED
+09:28:47.250 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: etEmail RUNNING
+09:28:47.330 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Email, accessibilityText=, hintText=Email, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/etEmail, clickable=true, bounds=[55,953][1025,1057], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=55, y=953, width=970, height=104))
+09:28:48.159 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:28:48.160 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 1005) using hierarchy based logic for wait
+09:28:50.234 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:28:50.235 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: etEmail COMPLETED
+09:28:50.235 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Input text ${INPUT_EMAIL} RUNNING
+09:28:50.238 [ INFO] maestro.Maestro.inputText: Inputting text: fariz@recis.co.id
+09:28:53.267 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Input text ${INPUT_EMAIL} COMPLETED
+09:28:53.267 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: etAddress RUNNING
+09:28:53.345 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Alamat, accessibilityText=, hintText=Alamat, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/etAddress, clickable=true, bounds=[55,1113][1025,1217], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=55, y=1113, width=970, height=104))
+09:28:54.175 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:28:54.178 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 1165) using hierarchy based logic for wait
+09:28:56.235 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:28:56.235 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: etAddress COMPLETED
+09:28:56.235 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Input text ${INPUT_ALAMAT} RUNNING
+09:28:56.239 [ INFO] maestro.Maestro.inputText: Inputting text: Kota Cimahi
+09:28:58.071 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Input text ${INPUT_ALAMAT} COMPLETED
+09:28:58.071 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../../../subflows/daftar/isi_form_daftar.yaml COMPLETED
+09:28:58.071 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/2.Form Daftar - Diisi RUNNING
+09:28:58.075 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:28:58.078 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:28:58.204 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/2.Form Daftar - Diisi COMPLETED
+09:28:58.204 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Lanjutkan" RUNNING
+09:28:58.275 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/btnRegister, clickable=true, bounds=[554,2180][1025,2285], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=554, y=2180, width=471, height=105))
+09:28:59.105 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:28:59.108 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (789, 2232) using hierarchy based logic for wait
+09:28:59.978 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:28:59.978 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Lanjutkan" COMPLETED
+09:28:59.978 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Referral" is visible RUNNING
+09:29:00.051 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "Referral" is visible COMPLETED
+09:29:00.052 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/3.Form Referral RUNNING
+09:29:00.053 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:00.054 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:00.174 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/3.Form Referral COMPLETED
+09:29:00.175 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../../subflows/daftar/isi_form_referral.yaml RUNNING
+09:29:00.178 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Define variables RUNNING
+09:29:00.179 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Define variables COMPLETED
+09:29:00.179 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+09:29:00.180 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+09:29:00.180 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on id: etReffPhone RUNNING
+09:29:00.251 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=No HP Referal (Optional), accessibilityText=, hintText=No HP Referal (Optional), ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/etReffPhone, clickable=true, bounds=[55,608][1025,712], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.EditText, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=55, y=608, width=970, height=104))
+09:29:01.119 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:29:01.121 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 660) using hierarchy based logic for wait
+09:29:03.150 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:29:03.150 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on id: etReffPhone COMPLETED
+09:29:03.150 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Input text ${INPUT_NO_HP_REFERRAL RUNNING
+09:29:03.151 [ INFO] maestro.Maestro.inputText: Inputting text: ${INPUT_NO_HP_REFERRAL
+09:29:05.646 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Input text ${INPUT_NO_HP_REFERRAL COMPLETED
+09:29:05.646 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../../../subflows/daftar/isi_form_referral.yaml COMPLETED
+09:29:05.647 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/3.Form Referral - Diisi RUNNING
+09:29:05.647 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:05.649 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:05.767 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/3.Form Referral - Diisi COMPLETED
+09:29:05.767 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Lanjutkan" RUNNING
+09:29:05.848 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Lanjutkan, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/btnRegister, clickable=true, bounds=[554,2180][1025,2285], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=554, y=2180, width=471, height=105))
+09:29:06.676 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:29:06.678 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (789, 2232) using hierarchy based logic for wait
+09:29:08.828 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:29:08.828 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Lanjutkan" COMPLETED
+09:29:08.828 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Syarat dan Ketentuan" is visible RUNNING
+09:29:09.022 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "Syarat dan Ketentuan" is visible COMPLETED
+09:29:09.022 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/4.Syarat dan Ketentuan RUNNING
+09:29:09.023 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:09.024 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:09.179 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/4.Syarat dan Ketentuan COMPLETED
+09:29:09.180 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../../subflows/daftar/syarat_dan_ketentuan.yaml RUNNING
+09:29:09.181 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+09:29:09.182 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+09:29:09.182 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter = 1} RUNNING
+09:29:09.184 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter = 1} COMPLETED
+09:29:09.184 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Repeat while id: checkboxRegister is not visible RUNNING
+09:29:10.023 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} RUNNING
+09:29:10.027 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:10.028 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:10.223 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} COMPLETED
+09:29:10.227 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:13.332 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:13.332 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:13.334 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:13.334 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:13.334 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:13.516 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:13.516 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:13.817 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:13.818 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:13.820 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:29:14.600 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} PENDING
+09:29:14.600 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Swipe from (50%, 80%) to (50%, 20%) in 300 ms PENDING
+09:29:14.600 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:29:14.601 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:29:14.601 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} RUNNING
+09:29:14.604 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:14.605 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:14.769 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} COMPLETED
+09:29:14.769 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:16.863 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:16.863 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:16.865 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:16.865 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:16.865 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:17.100 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:17.100 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:17.441 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:17.441 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:17.443 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:29:18.345 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} PENDING
+09:29:18.347 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Swipe from (50%, 80%) to (50%, 20%) in 300 ms PENDING
+09:29:18.348 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:29:18.348 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:29:18.348 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} RUNNING
+09:29:18.354 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:18.357 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:18.568 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} COMPLETED
+09:29:18.569 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:20.622 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:20.622 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:20.624 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:20.624 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:20.624 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:20.795 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:20.796 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:21.122 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:21.122 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:21.125 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:29:21.934 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} PENDING
+09:29:21.934 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Swipe from (50%, 80%) to (50%, 20%) in 300 ms PENDING
+09:29:21.934 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:29:21.934 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:29:21.934 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} RUNNING
+09:29:21.941 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:21.942 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:22.104 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} COMPLETED
+09:29:22.104 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:24.183 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:24.183 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:24.185 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:24.185 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:24.185 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:24.366 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:24.366 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:24.669 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:24.669 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:24.672 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:29:25.535 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} PENDING
+09:29:25.536 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Swipe from (50%, 80%) to (50%, 20%) in 300 ms PENDING
+09:29:25.536 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:29:25.536 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:29:25.536 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} RUNNING
+09:29:25.539 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:25.540 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:25.698 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} COMPLETED
+09:29:25.698 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:27.783 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:27.783 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:27.784 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:27.784 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:27.784 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:27.970 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:27.970 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:28.291 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:28.291 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:28.293 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:29:29.124 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} PENDING
+09:29:29.124 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Swipe from (50%, 80%) to (50%, 20%) in 300 ms PENDING
+09:29:29.124 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:29:29.124 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:29:29.124 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} RUNNING
+09:29:29.130 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:29.131 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:29.283 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} COMPLETED
+09:29:29.283 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:31.379 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:31.379 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:31.381 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:31.381 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:31.381 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:31.554 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:31.554 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:31.837 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:31.837 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:31.839 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:29:32.646 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} PENDING
+09:29:32.647 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Swipe from (50%, 80%) to (50%, 20%) in 300 ms PENDING
+09:29:32.647 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:29:32.647 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:29:32.647 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} RUNNING
+09:29:32.650 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:32.651 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:32.803 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} COMPLETED
+09:29:32.803 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:34.866 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:34.867 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:34.868 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:34.868 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:34.868 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:35.089 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:35.089 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:35.419 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:35.419 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:35.421 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:29:36.203 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} PENDING
+09:29:36.203 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Swipe from (50%, 80%) to (50%, 20%) in 300 ms PENDING
+09:29:36.203 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:29:36.203 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:29:36.203 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} RUNNING
+09:29:36.206 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:36.208 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:36.359 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} COMPLETED
+09:29:36.359 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:37.773 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:37.773 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:37.774 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:37.774 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:37.774 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:37.952 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:37.952 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:38.227 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:38.228 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:38.230 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:29:45.363 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Repeat while id: checkboxRegister is not visible COMPLETED
+09:29:45.364 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that id: checkboxRegister is visible RUNNING
+09:29:45.562 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that id: checkboxRegister is visible COMPLETED
+09:29:45.562 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} RUNNING
+09:29:45.569 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:45.570 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:45.716 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/4.s&k - " + output.counter + ".png"} COMPLETED
+09:29:45.716 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on ".*membaca dan menyetujui.*" RUNNING
+09:29:45.929 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Pendaftar telah membaca dan menyetujui Syarat dan Ketentuan ArthaQU, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/checkboxRegister, clickable=true, bounds=[55,2045][1025,2139], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.CheckBox, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=55, y=2045, width=970, height=94))
+09:29:46.890 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:29:46.891 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 2092) using hierarchy based logic for wait
+09:29:47.853 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:29:47.853 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on ".*membaca dan menyetujui.*" COMPLETED
+09:29:47.853 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../../../subflows/daftar/syarat_dan_ketentuan.yaml COMPLETED
+09:29:47.853 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/4.Form Referral - dicentang RUNNING
+09:29:47.854 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:47.856 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:48.032 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/4.Form Referral - dicentang COMPLETED
+09:29:48.032 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Berikutnya" RUNNING
+09:29:48.246 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Berikutnya, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/btnRegister, clickable=true, bounds=[554,2180][1025,2285], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=554, y=2180, width=471, height=105))
+09:29:49.213 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:29:49.214 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (789, 2232) using hierarchy based logic for wait
+09:29:50.567 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:29:50.568 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Berikutnya" COMPLETED
+09:29:50.568 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Kebijakan Privasi" is visible RUNNING
+09:29:50.689 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "Kebijakan Privasi" is visible COMPLETED
+09:29:50.689 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/5.Kebijakan Privasi RUNNING
+09:29:50.693 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:50.695 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:50.847 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/5.Kebijakan Privasi COMPLETED
+09:29:50.847 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../../subflows/daftar/kebijakan_privasi.yaml RUNNING
+09:29:50.849 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+09:29:50.849 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+09:29:50.850 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter = 1} RUNNING
+09:29:50.851 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter = 1} COMPLETED
+09:29:50.851 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Repeat while id: checkboxRegister is not visible RUNNING
+09:29:51.468 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/5.Kebijakan Privasi - " + output.counter + ".png"} RUNNING
+09:29:51.471 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:51.473 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:51.658 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/5.Kebijakan Privasi - " + output.counter + ".png"} COMPLETED
+09:29:51.658 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:53.651 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:53.652 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:53.654 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:53.654 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:53.654 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:53.835 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:53.835 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:54.118 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:54.119 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:54.120 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:29:54.704 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"daftar/5.Kebijakan Privasi - " + output.counter + ".png"} PENDING
+09:29:54.704 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Swipe from (50%, 80%) to (50%, 20%) in 300 ms PENDING
+09:29:54.704 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:29:54.704 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:29:54.704 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/5.Kebijakan Privasi - " + output.counter + ".png"} RUNNING
+09:29:54.708 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:54.709 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:54.857 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/5.Kebijakan Privasi - " + output.counter + ".png"} COMPLETED
+09:29:54.857 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:56.897 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:56.897 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:56.899 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:56.899 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:56.899 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:57.132 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:57.132 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:57.491 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:57.492 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:57.494 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:29:58.125 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Take screenshot ${"daftar/5.Kebijakan Privasi - " + output.counter + ".png"} PENDING
+09:29:58.125 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Swipe from (50%, 80%) to (50%, 20%) in 300 ms PENDING
+09:29:58.125 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Wait for animation to end PENDING
+09:29:58.125 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$15: Run ${output.counter++} PENDING
+09:29:58.125 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/5.Kebijakan Privasi - " + output.counter + ".png"} RUNNING
+09:29:58.128 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:29:58.129 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:58.335 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/5.Kebijakan Privasi - " + output.counter + ".png"} COMPLETED
+09:29:58.335 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:29:59.513 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:29:59.513 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:29:59.515 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:29:59.515 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:59.515 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:59.690 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:29:59.690 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:29:59.975 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:29:59.975 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:29:59.977 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:30:07.007 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Repeat while id: checkboxRegister is not visible COMPLETED
+09:30:07.008 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that id: checkboxRegister is visible RUNNING
+09:30:07.099 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that id: checkboxRegister is visible COMPLETED
+09:30:07.099 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/5.Kebijakan Privasi - " + output.counter + ".png"} RUNNING
+09:30:07.104 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:30:07.105 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:07.321 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/5.Kebijakan Privasi - " + output.counter + ".png"} COMPLETED
+09:30:07.322 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on ".*membaca dan menyetujui.*" RUNNING
+09:30:07.482 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Pendaftar telah membaca dan menyetujui Kebijakan Privasi ArthaQU, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/checkboxRegister, clickable=true, bounds=[55,2045][1025,2139], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.CheckBox, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=55, y=2045, width=970, height=94))
+09:30:08.357 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:30:08.359 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 2092) using hierarchy based logic for wait
+09:30:09.330 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:30:09.330 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on ".*membaca dan menyetujui.*" COMPLETED
+09:30:09.330 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../../../subflows/daftar/kebijakan_privasi.yaml COMPLETED
+09:30:09.330 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/5.Kebijakan Privasi - dicentang RUNNING
+09:30:09.330 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:30:09.331 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:09.544 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/5.Kebijakan Privasi - dicentang COMPLETED
+09:30:09.544 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Berikutnya" RUNNING
+09:30:09.610 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Berikutnya, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/btnRegister, clickable=true, bounds=[554,2180][1025,2285], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=554, y=2180, width=471, height=105))
+09:30:10.469 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:30:10.471 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (789, 2232) using hierarchy based logic for wait
+09:30:11.848 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:30:11.849 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Berikutnya" COMPLETED
+09:30:11.849 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Customer Consent" is visible RUNNING
+09:30:11.951 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that "Customer Consent" is visible COMPLETED
+09:30:11.951 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/6.Customer Consent RUNNING
+09:30:11.955 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:30:11.957 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:12.116 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/6.Customer Consent COMPLETED
+09:30:12.116 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../../subflows/daftar/customer_consent.yaml RUNNING
+09:30:12.117 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+09:30:12.118 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+09:30:12.118 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter = 1} RUNNING
+09:30:12.120 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter = 1} COMPLETED
+09:30:12.120 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Repeat while id: checkboxRegister is not visible RUNNING
+09:30:18.337 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/6.Customer Consent - " + output.counter + ".png"} RUNNING
+09:30:18.339 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:30:18.341 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:18.560 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/6.Customer Consent - " + output.counter + ".png"} COMPLETED
+09:30:18.560 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Swipe from (50%, 80%) to (50%, 20%) in 300 ms RUNNING
+09:30:19.144 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Swipe from (50%, 80%) to (50%, 20%) in 300 ms COMPLETED
+09:30:19.144 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:30:19.145 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:30:19.145 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:30:19.145 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:19.402 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:30:19.402 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:21.851 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:30:21.851 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:22.030 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:30:22.030 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:22.309 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:30:22.309 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ${output.counter++} RUNNING
+09:30:22.311 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ${output.counter++} COMPLETED
+09:30:29.377 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Repeat while id: checkboxRegister is not visible COMPLETED
+09:30:29.377 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that id: checkboxRegister is visible RUNNING
+09:30:29.469 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that id: checkboxRegister is visible COMPLETED
+09:30:29.469 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot ${"daftar/6.Customer Consent - " + output.counter + ".png"} RUNNING
+09:30:29.473 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:30:29.475 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:29.629 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot ${"daftar/6.Customer Consent - " + output.counter + ".png"} COMPLETED
+09:30:29.629 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on ".*membaca dan menyetujui.*" RUNNING
+09:30:29.726 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Pendaftar telah membaca dan menyetujui Customer Consent ArthaQU, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/checkboxRegister, clickable=true, bounds=[55,2045][1025,2139], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.CheckBox, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=55, y=2045, width=970, height=94))
+09:30:30.576 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:30:30.577 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (540, 2092) using hierarchy based logic for wait
+09:30:31.564 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:30:31.564 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on ".*membaca dan menyetujui.*" COMPLETED
+09:30:31.564 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run ../../../subflows/daftar/customer_consent.yaml COMPLETED
+09:30:31.564 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/6.Customer Consent - dicentang RUNNING
+09:30:31.565 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:30:31.567 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:31.764 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/6.Customer Consent - dicentang COMPLETED
+09:30:31.764 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "Daftar" RUNNING
+09:30:31.856 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=Daftar, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/btnRegister, clickable=true, bounds=[554,2180][1025,2285], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=554, y=2180, width=471, height=105))
+09:30:33.455 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:30:33.456 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (789, 2232) using hierarchy based logic for wait
+09:30:34.908 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:30:34.908 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "Daftar" COMPLETED
+09:30:34.908 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that ".*verifikasi OTP.*" is visible RUNNING
+09:30:34.978 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Assert that ".*verifikasi OTP.*" is visible COMPLETED
+09:30:34.978 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Take screenshot Daftar/7.Verifikasi OTP - 1 RUNNING
+09:30:34.980 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:30:34.982 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:35.159 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Take screenshot Daftar/7.Verifikasi OTP - 1 COMPLETED
+09:30:35.159 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run ../../../subflows/daftar/verifikasi_otp.yaml RUNNING
+09:30:35.160 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Apply configuration RUNNING
+09:30:35.161 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Apply configuration COMPLETED
+09:30:35.161 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run flow when ${DAFTAR_TIPE_OTP == "WA"} is true RUNNING
+09:30:35.166 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Tap on "WA" RUNNING
+09:30:35.237 [ INFO] maestro.Maestro.tap-HgV9Ck0: Tapping on element:  UiElement(treeNode=TreeNode(attributes={text=WA, accessibilityText=, hintText=, ignoreBoundsFiltering=false, resource-id=io.arthaqu.debug:id/btnAction2, clickable=true, bounds=[550,2099][1038,2204], enabled=true, focused=false, checked=false, scrollable=false, selected=false, class=android.widget.Button, important-for-accessibility=true, error=}, children=[], clickable=true, enabled=true, focused=false, checked=false, selected=false), bounds=Bounds(x=550, y=2099, width=488, height=105))
+09:30:36.052 [ INFO] maestro.Maestro.tap-HgV9Ck0: Refreshed element
+09:30:36.053 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Tapping at (794, 2151) using hierarchy based logic for wait
+09:30:37.221 [ INFO] maestro.Maestro.hierarchyBasedTap-ogj28Uc: Something has changed in the UI judging by view hierarchy. Proceed.
+09:30:37.221 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Tap on "WA" COMPLETED
+09:30:37.221 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Run flow when ${DAFTAR_TIPE_OTP == "WA"} is true COMPLETED
+09:30:37.221 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Run flow when ${DAFTAR_TIPE_OTP == "SMS"} is true RUNNING
+09:30:37.222 [ INFO] maestro.orchestra.Orchestra.executeSubflowCommands: [Command execution subflow] CommandSkipped: null
+09:30:37.222 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$13: Run flow when ${DAFTAR_TIPE_OTP == "SMS"} is true SKIPPED
+09:30:37.222 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Wait for animation to end RUNNING
+09:30:37.224 [ INFO] maestro.Maestro.waitForAnimationToEnd$lambda$51: Waiting for animation to end with timeout 15000
+09:30:37.224 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:30:37.224 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:37.418 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:30:37.418 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:37.852 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:30:37.852 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:38.069 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:30:38.069 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:38.490 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:30:38.490 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:38.724 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to byte array
+09:30:38.724 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:39.131 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$7: Wait for animation to end COMPLETED
+09:30:39.132 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$5: Assert that "Verifikasi Pendaftaran" is visible RUNNING
+09:30:56.276 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$9: Assert that "Verifikasi Pendaftaran" is visible FAILED
+09:30:56.282 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+09:30:56.285 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+09:30:56.421 [ERROR] maestro.orchestra.Orchestra.executeCommands: [Command execution] CommandFailed: Assertion is false: "Verifikasi Pendaftaran" is visible
+09:30:56.421 [ INFO] maestro.cli.runner.TestSuiteInteractor.runFlow$lambda$17$lambda$9: Run ../../../subflows/daftar/verifikasi_otp.yaml FAILED
+09:30:56.860 [ INFO] maestro.cli.report.TestDebugReporter.deleteOldFiles: Performing purge of logs older than 14 days from D:\1_Kerjaan VSI-QA\_AUTOMATION_\Mobile - Maestro\arthaqu-mobile-automation\.maestro\cli-results
